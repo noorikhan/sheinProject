@@ -1,0 +1,45 @@
+#container {
+	display: flex;
+	width: 800px;
+	margin: auto;
+	gap: 30px;
+	padding: 20px;
+	height: 500px;
+	line-height: 50px;
+	margin-top: 60px;
+}
+#signIn {
+	width: 40%;
+	height: 100%;
+	margin: auto;
+}
+#vertLine {
+	border: 1px solid #e8e8e8;
+	margin: auto;
+	height: 100%;
+}
+#signUp {
+	width: 40%;
+	margin: auto;
+	height: 100%;
+}
+h2 {
+	text-align: center;
+}
+.button {
+	margin-top: 20px;
+	width: 100%;
+	background-color: #222222;
+	color: #fffffc;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.userInput {
+	width: 97.5%;
+	height: 30px;
+}
+.text {
+	color: #8c7f74;
+}

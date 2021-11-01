@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="signInUp.css" />
+		<title>Sign In | Sign Up</title>
+	</head>
+	<body>
+		<div id="container">
+			<!-- sign in section -->
+			<div id="signIn">
+				<h2>Sign In</h2>
+				<form id="signInBtn">
+					<label class="text">Country/Region:</label>
+					<select id="country" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input
+							id="email"
+							class="userInput"
+							type="email"
+							placeholder="Enter email address"
+							required
+						/>
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input
+							id="pass"
+							class="userInput"
+							type="password"
+							placeholder="Enter password"
+							required
+						/>
+					</div>
+					<input class="button" type="submit" value="SIGN IN" />
+				</form>
+			</div>
+			<!-- vertical line section -->
+			<div id="vertLine"></div>
+			<!-- sign up section -->
+			<div id="signUp">
+				<h2>New To SHEIN</h2>
+				<form id="signUpBtn">
+					<label class="text">Country/Region:</label>
+					<select id="region" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input
+							id="emailAddress"
+							class="userInput"
+							type="email"
+							placeholder="Enter email address"
+							required
+						/>
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input
+							id="password"
+							class="userInput"
+							type="password"
+							placeholder="Enter password"
+							required
+						/>
+					</div>
+					<div>
+						<label class="text">Confirm Password:</label>
+						<br />
+						<input
+							id="cPassword"
+							class="userInput"
+							type="password"
+							placeholder="confirm password"
+							required
+						/>
+					</div>
+					<input class="button" type="submit" value="Register" />
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="signInUp.js"></script>
+</html>

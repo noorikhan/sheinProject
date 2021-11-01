@@ -1,0 +1,49 @@
+#headingTwo {
+	display: flex;
+	/* border: 1px solid red; */
+	background-color: #f7f8fa;
+}
+#firstDiv {
+	/* border: 1px solid blue; */
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	width: 620px;
+	font-size: 20px;
+	gap: 20px;
+	padding-top: 15px;
+	color: #7f8080;
+}
+#secondDiv {
+	width: 13%;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 42px;
+	margin-left: 20px;
+	color: #222222;
+	letter-spacing: 7px;
+}
+#thirdDiv {
+	display: flex;
+	width: 700px;
+	justify-content: right;
+}
+.icons {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	margin-top: 3px;
+	padding: 10px;
+	margin-left: 10px;
+}
+img {
+	width: 100%;
+}
+.cart {
+	display: flex;
+	gap: 5px;
+}
+.prodCount {
+	font-size: 20px;
+}
