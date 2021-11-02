@@ -4,7 +4,7 @@
 	margin: auto;
 	gap: 30px;
 	padding: 20px;
-	height: 500px;
+	height: 550px;
 	margin-top: 60px;
 }
 #signIn {
@@ -35,6 +35,9 @@ h2 {
 	font-weight: bold;
 	cursor: pointer;
 }
+.button:hover {
+	background-color: rgb(87, 84, 84);
+}
 .userInput {
 	width: 97.5%;
 	height: 30px;
@@ -53,4 +56,83 @@ h2 {
 }
 #signUpBtn > div {
 	margin-bottom: 22px;
+}
+#forgetPassword {
+	color: #8c7f74;
+	text-align: center;
+	font-size: 14px;
+}
+#forgetPassword:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: black;
+}
+#or {
+	display: flex;
+	flex-wrap: wrap;
+	height: 50px;
+}
+#or > div {
+	border: 1px solid #c5bdb6;
+	width: 45%;
+	height: 0px;
+	margin-top: 27px;
+}
+#or > p {
+	color: #c5bdb6;
+	text-align: center;
+	font-size: 14px;
+	padding: 2%;
+}
+#gmail,
+#facebook {
+	border: 1px solid #cecbcb;
+	display: flex;
+	height: 50px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+/* #facebook {
+	border: 1px solid blue;
+	display: flex;
+	height: 50px;
+} */
+#gmail > div,
+#facebook > div {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+#gmail > div + div,
+#facebook > div + div {
+	width: 180px;
+	margin-left: 45px;
+	font-size: 20px;
+	padding-top: 5px;
+	color: #81807e;
+}
+#facebook > div + div {
+	margin-left: 34.5px;
+	width: 200px;
+}
+#gmail:hover,
+#facebook:hover {
+	background-color: rgb(233, 227, 227);
+}
+#privacyAndAgreement {
+	display: flex;
+	gap: 5px;
+	cursor: pointer;
+	font-size: 18px;
+}
+#privacyAndAgreement > div {
+	color: #81807e;
+}
+#privacyAndAgreement > div > input {
+	cursor: pointer;
+}
+#privacyAndAgreement > div > a {
+	text-decoration: none;
+	color: #3272bb;
 }

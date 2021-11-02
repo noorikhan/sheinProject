@@ -92,3 +92,16 @@ function checkUserDetails(email, pass, country) {
 		}
 	}
 }
+
+// gmail redirect
+document.getElementById("gmail").addEventListener("click", function () {
+	window.open(
+		"https://accounts.google.com/signin/v2/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+		"_blank"
+	);
+});
+
+// facebook redirect
+document.getElementById("facebook").addEventListener("click", function () {
+	window.open("https://en-gb.facebook.com/", "_blank");
+});

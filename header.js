@@ -9,3 +9,8 @@ function signInAndSignup() {
 document.getElementById("home").addEventListener("click", function () {
 	window.location.href = "header.html";
 });
+
+// logo
+document.getElementById("logo").addEventListener("click", function () {
+	window.location.href = "header.html";
+});

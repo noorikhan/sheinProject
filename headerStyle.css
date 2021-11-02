@@ -1,10 +1,8 @@
 #headingTwo {
 	display: flex;
-	/* border: 1px solid red; */
 	background-color: #f7f8fa;
 }
 #lists {
-	/* border: 1px solid blue; */
 	cursor: pointer;
 	display: flex;
 	flex-wrap: wrap;
@@ -46,4 +44,10 @@ img {
 }
 .prodCount {
 	font-size: 20px;
+}
+.colorChange:hover {
+	color: black;
+}
+.iconColor:hover {
+	filter: invert(45%);
 }

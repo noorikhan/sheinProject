@@ -13,22 +13,22 @@
 		<header>
 			<div id="headingTwo">
 				<div id="lists">
-					<span>
+					<span id="women" class="colorChange">
 						WOMEN
 					</span>
-					<span>
+					<span id="curve+plus" class="colorChange">
 						CURVE + PLUS
 					</span>
-					<span>
+					<span id="kids" class="colorChange">
 						KIDS
 					</span>
-					<span>
+					<span id="men" class="colorChange">
 						MEN
 					</span>
-					<span>
+					<span id="beauty" class="colorChange">
 						BEAUTY
 					</span>
-					<span id="home">
+					<span id="home" class="colorChange">
 						HOME
 					</span>
 				</div>
@@ -36,24 +36,23 @@
 					SHEIN
 				</div>
 				<div id="headerIcons">
-					<div class="icons" id="user">
+					<div class="icons iconColor" id="user">
 						<img src="/images/user.png" alt="sign in/sign up" />
 					</div>
-					<div class="icons cart" id="bags">
+					<div class="icons iconColor cart" id="bags">
 						<img src="/images/shopping-bag.png" alt="sign in/sign up" />
 						<div class="prodCount">0</div>
 					</div>
-					<div class="icons cart" id="favs">
+					<div class="icons iconColor cart" id="favs">
 						<img src="/images/heart.png" alt="sign in/sign up" />
 						<div class="prodCount">0</div>
 					</div>
-					<div class="icons" id="custCare">
+					<div class="icons iconColor" id="custCare">
 						<img src="/images/customer-support.png" alt="sign in/sign up" />
 					</div>
 				</div>
 			</div>
 		</header>
-		<script src="header.js"></script>
 
 		<div id="container">
 			<!-- sign in section -->
@@ -84,6 +83,28 @@
 					</div>
 					<input class="button" type="submit" value="SIGN IN" />
 				</form>
+				<p id="forgetPassword">Forgot your password?</p>
+				<div id="or">
+					<div></div>
+					<p>Or</p>
+					<div></div>
+				</div>
+				<div id="gmail">
+					<div>
+						<img src="/images/google-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Google
+					</div>
+				</div>
+				<div id="facebook">
+					<div>
+						<img src="/images/fb-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Facebook
+					</div>
+				</div>
 			</div>
 			<!-- vertical line section -->
 			<div id="vertLine"></div>
@@ -118,10 +139,22 @@
 						<br />
 						<input id="cPassword" class="userInput" type="password" required />
 					</div>
+					<div id="privacyAndAgreement">
+						<div>
+							<input type="checkbox" required />
+						</div>
+						<div>
+							l agree to the
+							<a href="#" target="_blank">Privacy & Cookie Policy</a> and
+							<a href="#" target="_blank">Terms & Conditions</a>.
+						</div>
+					</div>
 					<input class="button" type="submit" value="Register" />
 				</form>
 			</div>
 		</div>
 	</body>
+
+	<script src="header.js"></script>
 	<script src="signInUp.js"></script>
 </html>
