@@ -3,7 +3,7 @@
 	/* border: 1px solid red; */
 	background-color: #f7f8fa;
 }
-#firstDiv {
+#lists {
 	/* border: 1px solid blue; */
 	cursor: pointer;
 	display: flex;
@@ -14,7 +14,7 @@
 	padding-top: 15px;
 	color: #7f8080;
 }
-#secondDiv {
+#logo {
 	width: 13%;
 	cursor: pointer;
 	text-align: center;
@@ -24,7 +24,7 @@
 	color: #222222;
 	letter-spacing: 7px;
 }
-#thirdDiv {
+#headerIcons {
 	display: flex;
 	width: 700px;
 	justify-content: right;

@@ -1,3 +1,8 @@
+// home tab
+document.getElementById("home").addEventListener("click", function () {
+	window.location.href = "header.html";
+});
+
 // sign up code
 
 document.getElementById("signUpBtn").addEventListener("submit", signUp);
@@ -83,8 +88,7 @@ function checkUserDetails(email, pass, country) {
 			break;
 		} else if (i == userData.length - 1) {
 			alert("user details are incorrect");
-		} else {
-			window.location.href = "header.html";
+			break;
 		}
 	}
 }

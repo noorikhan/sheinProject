@@ -5,9 +5,56 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="signInUp.css" />
+		<link rel="stylesheet" href="headerStyle.css" />
 		<title>Sign In | Sign Up</title>
 	</head>
 	<body>
+		<!-- header part -->
+		<header>
+			<div id="headingTwo">
+				<div id="lists">
+					<span>
+						WOMEN
+					</span>
+					<span>
+						CURVE + PLUS
+					</span>
+					<span>
+						KIDS
+					</span>
+					<span>
+						MEN
+					</span>
+					<span>
+						BEAUTY
+					</span>
+					<span id="home">
+						HOME
+					</span>
+				</div>
+				<div id="logo">
+					SHEIN
+				</div>
+				<div id="headerIcons">
+					<div class="icons" id="user">
+						<img src="/images/user.png" alt="sign in/sign up" />
+					</div>
+					<div class="icons cart" id="bags">
+						<img src="/images/shopping-bag.png" alt="sign in/sign up" />
+						<div class="prodCount">0</div>
+					</div>
+					<div class="icons cart" id="favs">
+						<img src="/images/heart.png" alt="sign in/sign up" />
+						<div class="prodCount">0</div>
+					</div>
+					<div class="icons" id="custCare">
+						<img src="/images/customer-support.png" alt="sign in/sign up" />
+					</div>
+				</div>
+			</div>
+		</header>
+		<script src="header.js"></script>
+
 		<div id="container">
 			<!-- sign in section -->
 			<div id="signIn">
@@ -28,24 +75,12 @@
 					<div>
 						<label class="text">Email Address:</label>
 						<br />
-						<input
-							id="email"
-							class="userInput"
-							type="email"
-							placeholder="Enter email address"
-							required
-						/>
+						<input id="email" class="userInput" type="email" required />
 					</div>
 					<div>
 						<label class="text">Password:</label>
 						<br />
-						<input
-							id="pass"
-							class="userInput"
-							type="password"
-							placeholder="Enter password"
-							required
-						/>
+						<input id="pass" class="userInput" type="password" required />
 					</div>
 					<input class="button" type="submit" value="SIGN IN" />
 				</form>
@@ -71,35 +106,17 @@
 					<div>
 						<label class="text">Email Address:</label>
 						<br />
-						<input
-							id="emailAddress"
-							class="userInput"
-							type="email"
-							placeholder="Enter email address"
-							required
-						/>
+						<input id="emailAddress" class="userInput" type="email" required />
 					</div>
 					<div>
 						<label class="text">Password:</label>
 						<br />
-						<input
-							id="password"
-							class="userInput"
-							type="password"
-							placeholder="Enter password"
-							required
-						/>
+						<input id="password" class="userInput" type="password" required />
 					</div>
 					<div>
 						<label class="text">Confirm Password:</label>
 						<br />
-						<input
-							id="cPassword"
-							class="userInput"
-							type="password"
-							placeholder="confirm password"
-							required
-						/>
+						<input id="cPassword" class="userInput" type="password" required />
 					</div>
 					<input class="button" type="submit" value="Register" />
 				</form>
