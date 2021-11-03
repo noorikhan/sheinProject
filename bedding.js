@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 
@@ -36,7 +35,6 @@ var bedSkirt = [
  {category:"bedSkirt", title:"Houndstooth pattern Bed Skirt",price:"US$35.00",imgUrl:["img4.webp"]},
  {category:"bedSkirt", title:"Plain Print Bed Skirt",price:"US$35.00",imgUrl:["img5.webp"]}
  ]
-=======
 // buttons
 
 var buttons = [
@@ -53,4 +51,3 @@ var buttons = [
   { title: "Home Improvement", backgroundColor: "white" },
   { title: "Holiday", backgroundColor: "white" },
 ];
->>>>>>> 7564dee2692d19c81ca1e98bfd36598e6c568e58
