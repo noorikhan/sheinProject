@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #catList {
+        padding: 3%;
+        width: 10%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      #boxs {
+        width: 68%;
+      }
+      #box {
+        /* width: 60%; */
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        justify-content: space-around;
+        grid-gap: 5%;
+      }
+
+      #box > div {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      button {
+        width: 100%;
+        height: 60px;
+        font-size: 30px;
+        background-color: green;
+        color: white;
+        border: 0px;
+      }
+
+      p,
+      h1 {
+        margin-left: 5%;
+      }
+      img {
+        width: 100%;
+      }
+
+      /* #cat {
+        display: none;
+      } */
+      #bedsDiv {
+        display: none;
+      }
+      #kitchenDiv {
+        display: none;
+      }
+
+      #decoreDiv {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="catList">
+        <h3>Category +</h3>
+        <div id="cat">
+          <input type="radio" id="bedcat" value="beding" name="cat" />
+          <label for="bed">Bedding</label><br />
+
+          <div id="bedsDiv">
+            <input
+              type="radio"
+              id="bed"
+              value="beding"
+              name="beds"
+              style="margin-left: 20px"
+            />
+            <label for="bed">Bed Skirts</label><br />
+            <input
+              type="radio"
+              id="kitchen"
+              value="kitchen"
+              name="beds"
+              style="margin-left: 20px"
+            />
+            <label for="kitchen">Bed Runners</label><br />
+            <input
+              type="radio"
+              id="decore"
+              value="decore"
+              name="beds"
+              style="margin-left: 20px"
+            />
+            <label for="decore">Bedspread & Sets</label><br />
+          </div>
+
+          <input type="radio" id="kitchencat" value="kitchen" name="cat" />
+          <label for="kitchen">Kitchen & Dining</label><br />
+
+          <div id="kitchenDiv">
+            <input
+              type="radio"
+              id="bed"
+              value="beding"
+              name="kitchen"
+              style="margin-left: 20px"
+            />
+            <label for="bed">Bakeware</label><br />
+            <input
+              type="radio"
+              id="kitchen"
+              value="kitchen"
+              name="kitchen"
+              style="margin-left: 20px"
+            />
+            <label for="kitchen">Barware</label><br />
+            <input
+              type="radio"
+              id="decore"
+              value="decore"
+              name="kitchen"
+              style="margin-left: 20px"
+            />
+            <label for="decore">Cofee & Teaware</label><br />
+          </div>
+
+          <input type="radio" id="decorecat" value="decore" name="cat" />
+          <label for="decore">Home Decore</label><br />
+
+          <div id="decoreDiv">
+            <input
+              type="radio"
+              id="bed"
+              value="beding"
+              name="decore"
+              style="margin-left: 20px"
+            />
+            <label for="bed">Decorative pillows</label><br />
+            <input
+              type="radio"
+              id="kitchen"
+              value="kitchen"
+              name="decore"
+              style="margin-left: 20px"
+            />
+            <label for="kitchen">Tapestry</label><br />
+            <input
+              type="radio"
+              id="decore"
+              value="decore"
+              name="decore"
+              style="margin-left: 20px"
+            />
+            <label for="decore">Wall Decore</label><br />
+          </div>
+        </div>
+
+        <h4>Size</h4>
+        <div id="checkBox">
+          <input type="checkbox" id="x" name="x" value="x" />
+          <label for="x"> X</label>
+          <input type="checkbox" id="xl" name="xl" value="xl" />
+          <label for="xl">XL</label><br />
+          <input type="checkbox" id="m" name="m" value="m" />
+          <label for="m"> M</label>
+          <input type="checkbox" id="l" name="l" value="l" />
+          <label for="l">L</label><br />
+        </div>
+
+        <h4>Price Range</h4>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1000"
+            max="10000"
+            value="1000"
+            class="slider"
+            id="myRange"
+          />
+          <p></p>
+        </div>
+      </div>
+      <div id="boxs"></div>
+    </div>
+  </body>
+</html>
+<script>
+  var bedding = [
+    {
+      title: "1 pair Christmas print Pillowcase",
+      price: "US$10.00",
+      img: [
+        "beddingImages/img2.webp",
+        "beddingImages/img2.1.webp",
+        "beddingImages/img2.2.webp",
+        "beddingImages/img2.4.webp",
+      ],
+    },
+    {
+      title: "1pc plain Plush Blanket",
+      price: "US$54.00",
+      img: ["beddingImages/img1.webp"],
+    },
+    {
+      title: "1pair Fleece Pillowcase Without Filler",
+      price: "US$14.00",
+      img: ["beddingImages/img4.webp"],
+    },
+    {
+      title: "Butterfly Print Duvet Coever Set Without",
+      price: "US$37.00",
+      img: [
+        "beddingImages/img5.webp",
+        "beddingImages/img5.1.webp",
+        "beddingImages/img5.2.webp",
+      ],
+    },
+    {
+      title: "1pair Fleece Pillowcase Without Filler",
+      price: "US$15.00",
+      img: ["beddingImages/img3.webp", "beddingImages/img3.1.webp"],
+    },
+  ];
+
+  var body = document.getElementById("boxs");
+
+  var mainDiv = document.createElement("div");
+  mainDiv.setAttribute("id", "box");
+  body.append(mainDiv);
+  showProducts();
+
+  function showProducts() {
+    bedding.map(function (item) {
+      var box = document.createElement("div");
+
+      var image = document.createElement("img");
+      image.setAttribute("src", item.img[0]);
+
+      var h = document.createElement("h1");
+      h.textContent = item.title;
+
+      var p = document.createElement("p");
+      p.textContent = item.price;
+
+      var btn = document.createElement("button");
+      btn.textContent = "CHECKOUT";
+      btn.addEventListener("click", function (item) {
+        details(item);
+      });
+
+      box.append(image, h, p, btn);
+
+      mainDiv.append(box);
+    });
+
+    // document.querySelector("h3").addEventListener("click", function () {
+    //   document.querySelector("h3").textContent = "Category   -";
+    //   var cat = document.getElementById("cat");
+    //   cat.style.display = "inline";
+    // });
+
+    catDisplay("bedcat", "bedsDiv");
+    catDisplay("kitchencat", "kitchenDiv");
+    catDisplay("decorecat", "decoreDiv");
+
+    var slider = document.getElementById("myRange");
+    var p = document.querySelector("p");
+    p.innerHTML = `US$ ${slider.value}`;
+
+    slider.oninput = function () {
+      p.innerHTML = `US$ ${this.value}`;
+    };
+  }
+
+  function catDisplay(id1, id2) {
+    document.getElementById(id1).addEventListener("click", function () {
+      document.getElementById(id2).style.display = "inline";
+    });
+  }
+</script>
