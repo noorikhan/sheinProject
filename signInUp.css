@@ -71,6 +71,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	height: 50px;
+	margin-bottom: 20px;
 }
 #or > div {
 	border: 1px solid #c5bdb6;
@@ -92,11 +93,6 @@ h2 {
 	margin-bottom: 20px;
 	cursor: pointer;
 }
-/* #facebook {
-	border: 1px solid blue;
-	display: flex;
-	height: 50px;
-} */
 #gmail > div,
 #facebook > div {
 	width: 30px;

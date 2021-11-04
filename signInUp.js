@@ -105,3 +105,10 @@ document.getElementById("gmail").addEventListener("click", function () {
 document.getElementById("facebook").addEventListener("click", function () {
 	window.open("https://en-gb.facebook.com/", "_blank");
 });
+
+// forget password redirect
+document
+	.getElementById("forgetPassword")
+	.addEventListener("click", function () {
+		window.location.href = "forgetPassword.html";
+	});
