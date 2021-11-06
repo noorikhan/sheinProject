@@ -70,7 +70,7 @@ function setNewPassword(email) {
 				if (email == userData[i].emailAddress) {
 					userData[i].password = newPassword.value;
 					localStorage.setItem("userData", JSON.stringify(userData));
-					alert("Password reset successful");
+					alert("password reset successful");
 					window.location.href = "signInAndSignup.html";
 				}
 			}
