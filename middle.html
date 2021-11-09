@@ -1,145 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      #boxes {
-        display: flex;
-        padding: 15px;
-        background-color: red;
-      }
-      #boxes > img {
-        width: 25%;
-        height: 80%;
-        color: white;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="middle.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="bigImage">
+				<a href="#"
+					><img
+						class="animatedGif"
+						src="https://img.ltwebstatic.com/images3_ach/2021/11/01/163573213408d427f781f85411867c124cd1148009.gif"
+				/></a>
+			</div>
 
-      #boxes > p {
-        padding-left: 15%;
-        color: white;
-      }
-      #categoryBox {
-        margin: auto;
-        width: 98%;
-        display: grid;
-        grid-template-columns: repeat(5, 250px);
-        grid-template-rows: repeat(3, 80px);
-        grid-gap: 15px;
-        justify-content: space-evenly;
-      }
-      h1 {
-        text-align: center;
-      }
-      #bigImage {
-        width: 96%;
-        height: 550px;
-        overflow: hidden;
-        margin: auto;
-      }
-      img.animatedGif {
-        width: 100%;
-        height: auto;
-      }
+			<div id="category">
+				<h1>Shop By Categories</h1>
+				<div id="categoryBox"></div>
+			</div>
 
-      #campaigns {
-        width: 96%;
-        margin: auto;
-        margin-top: 5%;
-      }
-      /* img.mySlides {
-        height: 480px;
-        width: 100%;
-      } */
-      #brand {
-        width: 96%;
-        margin: auto;
-        margin-top: 5%;
-      }
+			<div id="campaigns">
+				<h1>#SHEINCampaigns</h1>
+				<div id="campaignsImg">
+					<a href="#"
+						><img
+							class="animatedGif mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/09/23/1632386030b2e3e797592f555ff399155f6048728b.gif"
+					/></a>
+					<a href="#"
+						><img
+							class="mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/15/1634264691c50422320e98be1d171a29e635b6b2c1.jpg"
+					/></a>
+					<a href="#"
+						><img
+							class="mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/31/16356721566e4e0307cbdc98ba0cef7431a480075f.jpg"
+					/></a>
+				</div>
+			</div>
 
-      #dailydrops {
-        width: 96%;
-        margin: auto;
-        margin-top: 5%;
-      }
+			<div id="brand">
+				<h1>Brands</h1>
+				<div id="brandImage">
+					<a href="#"
+						><img
+							src="https://img.ltwebstatic.com/images3_ach/2021/07/12/1626083492aa2f50066f18bf1207d968114b95f19d.webp"
+					/></a>
+				</div>
+			</div>
 
-      #sheinSale {
-        width: 96%;
-        margin: auto;
-        margin-top: 5%;
-      }
+			<div id="dailydrops">
+				<h1>#dailydrops</h1>
+				<div id="dailydropImage">
+					<a href="#"
+						><img
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/31/163567250206f2dcf6a0e9576926adc763b71394ad.webp"
+					/></a>
+				</div>
+			</div>
 
-      img {
-        height: 480px;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <div></div>
-
-      <div id="bigImage">
-        <img
-          class="animatedGif"
-          src="https://img.ltwebstatic.com/images3_ach/2021/11/01/163573213408d427f781f85411867c124cd1148009.gif"
-        />
-      </div>
-
-      <div id="category">
-        <h1>Shop By Categories</h1>
-        <div id="categoryBox"></div>
-      </div>
-
-      <div id="campaigns">
-        <h1>#SHEINCampaigns</h1>
-        <div id="campaignsImg">
-          <img
-            class="animatedGif mySlides"
-            src="https://img.ltwebstatic.com/images3_ach/2021/09/23/1632386030b2e3e797592f555ff399155f6048728b.gif"
-          />
-          <img
-            class="mySlides"
-            src="https://img.ltwebstatic.com/images3_ach/2021/10/15/1634264691c50422320e98be1d171a29e635b6b2c1.jpg"
-          />
-          <img
-            class="mySlides"
-            src="https://img.ltwebstatic.com/images3_ach/2021/10/31/16356721566e4e0307cbdc98ba0cef7431a480075f.jpg"
-          />
-        </div>
-      </div>
-
-      <div id="brand">
-        <h1>Brands</h1>
-        <div id="brandImage">
-          <img
-            src="https://img.ltwebstatic.com/images3_ach/2021/07/12/1626083492aa2f50066f18bf1207d968114b95f19d.webp"
-          />
-        </div>
-      </div>
-
-      <div id="dailydrops">
-        <h1>#dailydrops</h1>
-        <div id="dailydropImage">
-          <img
-            src="https://img.ltwebstatic.com/images3_ach/2021/10/31/163567250206f2dcf6a0e9576926adc763b71394ad.webp"
-          />
-        </div>
-      </div>
-
-      <div id="sheinSale">
-        <h1>#SHEINsale</h1>
-        <div id="sheinSaleImage">
-          <img
-            class="animatedGif"
-            src="https://img.ltwebstatic.com/images3_ach/2021/06/17/16239081902b19421e7be518a4143339b791b03edd.gif"
-          />
-        </div>
-      </div>
-    </div>
-  </body>
+			<div id="sheinSale">
+				<h1>#SHEINsale</h1>
+				<div id="sheinSaleImage">
+					<a href="#"
+						><img
+							class="animatedGif"
+							src="https://img.ltwebstatic.com/images3_ach/2021/06/17/16239081902b19421e7be518a4143339b791b03edd.gif"
+					/></a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
 <script src="middlePart.js"></script>
 

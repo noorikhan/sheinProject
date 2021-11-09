@@ -1,0 +1,77 @@
+#container {
+	/* border: 1px solid red; */
+	width: 95%;
+	margin: auto;
+	cursor: pointer;
+}
+h1 {
+	text-align: center;
+}
+#categoryBox {
+	/* border: 1px solid blue; */
+	margin: auto;
+	width: 98%;
+	display: grid;
+	grid-template-columns: repeat(5, 250px);
+	grid-template-rows: repeat(3, 80px);
+	grid-gap: 15px;
+	justify-content: space-evenly;
+}
+#bigImage {
+	width: 96%;
+	height: 550px;
+	overflow: hidden;
+	margin: auto;
+}
+img.animatedGif {
+	width: 100%;
+	height: auto;
+}
+#boxes {
+	display: flex;
+	padding: 15px;
+	background-color: red;
+}
+#boxes > #imageBox {
+	width: 50px;
+}
+#boxes > #imageBox > img {
+	width: 100%;
+	filter: invert(100%);
+}
+#shopCatText {
+	padding-left: 15%;
+	color: white;
+	font-size: 16.3px;
+}
+#campaigns {
+	/* border: 1px solid blue; */
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
+}
+#campaignsImg > a > img {
+	width: 100%;
+}
+#brand {
+	/* border: 1px solid blue; */
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
+}
+#brandImage > a > img {
+	width: 100%;
+}
+#dailydrops {
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
+}
+#dailydropImage > a > img {
+	width: 100%;
+}
+#sheinSale {
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
+}
