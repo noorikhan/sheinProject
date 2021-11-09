@@ -40,10 +40,15 @@ var Category = [
   {category:"bedding",subcategory:"sheetsAndPillow", title:"1 pair pillows Santa printed",color:["red","green","blue","yellow","black","grey"],   size:["one-size", "s","m","xl","l"], price:"US$19.00", imgUrl:["sheetsAndPillowcase/1pairpillowSanta.webp","sheetsAndPillowcase/1pairpillowSantaSmall.webp"]}, 
   {category:"bedding",subcategory:"sheetsAndPillow", title:"Christmasn print sheet",color:["red","green","blue","yellow","black","grey"],   size:["one-size", "s","m","xl","l"], price:"US$27.00", imgUrl:["sheetsAndPillowcase/chistmasPrintedSheet.webp","sheetsAndPillowcase/christmasPrintedSheetSmall.webp"]},
   {category:"bedding",subcategory:"sheetsAndPillow", title:"Christmas print Deer",color:["red","green","blue","yellow","black","grey"], price:"US$21.00",size:["one-size", "s","m","xl","l"], imgUrl:["sheetsAndPillowcase/christmasPrintDeer.webp","sheetsAndPillowcase/christmasPrintDeerSmall.webp"]},
-  {category:"bedding",subcategory:"sheetsAndPillow", title:"Tree print sheet",color:["red","green","blue","yellow","black","grey"], price:"US$38.00",size:["one-size", "s","m","xl","l"], imgUrl:["sheetsAndPillowcase/TreePrintSheet.webp","sheetsAndPillowcase/TreePrintSheetSmall.webp"]}
-
-
-
+  {category:"bedding",subcategory:"sheetsAndPillow", title:"Tree print sheet",color:["red","green","blue","yellow","black","grey"], price:"US$38.00",size:["one-size", "s","m","xl","l"], imgUrl:["sheetsAndPillowcase/TreePrintSheet.webp","sheetsAndPillowcase/TreePrintSheetSmall.webp"]},
+   //this is dining and dinner category//
+   {category:"diningKitchen",subcategory:"Kichen", title:"100pc Elk spoon chirstmas", color:"gold",size:"one-size", price:"US$4.00", imgUrl:["kitchen/100pcChristmasElkSpoon.webp","kitchen/100pcChristmasElkSpoonSmall.webp"]  },
+   {category:"diningKitchen",subcategory:"Kichen", title:"christmas pattern placemat", color:"gold",size:"one-size", price:"US$5.00", imgUrl:["kitchen/christamasPlacematPattern.webp","kitchen/christmasPatternPlacematSmall.webp"]},
+   {category:"diningKitchen",subcategory:"Kichen", title:"christmas slogan dinner", color:"red",size:"one-size", price:"US$3.00", imgUrl:["kitchen/christmasSlogan.webp","kitchen/christmasSloganSmall.webp"]},
+   {category:"diningKitchen",subcategory:"Kichen", title:"christmas wine Glass set", color:"white",size:"one-size", price:"US$8.00", imgUrl:["kitchen/christmasWineGlass.webp","kitchen/christmasWineGlassSmalll.webp"]},
+   {category:"diningKitchen",subcategory:"Kichen", title:"christmas elk print ", color:"black",size:"one-size", price:"US$12.00", imgUrl:["kitchen/christmasElkPrint.webp","kitchen/christmasElkPrintSmall.webp"]},
+    
+   
 
 ]
 
