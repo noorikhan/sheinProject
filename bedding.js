@@ -51,3 +51,36 @@ var buttons = [
   { title: "Home Improvement", backgroundColor: "white" },
   { title: "Holiday", backgroundColor: "white" },
 ];
+
+
+
+// this is bedSpread cateogry
+
+ var bedSpread = [
+   
+    {category: "BedSpread and Sets", title:"Gradient color Spreadsheet", price:"US$41.00", imgUrl:["bedspreadandRunners/gradientColor.webp","bedspreadandRunners/gradientColorSmall.webp"] },
+    {category: "BedSpread and Sets", title:"Pizaa print spreadheet", price:"US$28.00", imgUrl:["bedspreadandRunners/pizaaPrint.webp","bedspreadandRunners/pizzaPrintSmall.webp"] },
+    {category: "BedSpread and Sets",  title:"Star Print spreadsheet", price:"US$33.00", imgUrl:["bedspreadandRunners/starPrint.webp","bedspreadandRunners/starPrintSmall.webp"]},
+    {category: "BedSpread and Sets", title:"christmas pattern spreasheet", price:"US$40.00", imgUrl:["bedspreadandRunners/christmasPattern.webp","bedspreadandRunners/christmasPatternSmall.webp"]},
+  ]
+
+// this is blankets and throw category
+
+var blankets = [
+  {category:"blankets and throw", title:"christmas print blanket", price:"US$28.00", imgUrl:["blankets and Throws/christmasPrint.webp","blankets and Throws/christmasPrintSmall.webp"]},
+  {category:"blankets and throw", title:"christmas Santa print blanket", price:"US$32.99", imgUrl:["blankets and Throws/christmasSanta.webp","blankets and Throws/christmasSantaSmall.webp"]},
+  {category:"blankets and throw", title:"halloween Spider print", price:"US$42.23", imgUrl:["blankets and Throws/halloweenSpider.webp","blankets and Throws/halloweenSpiderSmall.webp"]},
+  {category:"blankets and throw", title:"christmas deer print blanket", price:"US$72.00", imgUrl:["blankets and Throws/Christmas Deer blanket.webp","blankets and Throws/christmas Deer blanket small.webp"]},
+]
+
+
+//this is sheets and pillow
+
+var pillow = [
+  {category:"Sheets and pillow", title:"1 pair pillows Santa printed", price:"US$19.00", imgUrl:["sheetsAndPillowcase/1pairpillowSanta.webp","sheetsAndPillowcase/1pairpillowSantaSmall.webp"]}, 
+  {category:"Sheets and pillow", title:"Christmasn print sheet", price:"US$27.00", imgUrl:["sheetsAndPillowcase/chistmasPrintedSheet.webp","sheetsAndPillowcase/christmasPrintedSheetSmall.webp"]},
+  {category:"Sheets and pillow", title:"Christmas print Deer", price:"US$21.00", imgUrl:["sheetsAndPillowcase/christmasPrintDeer.webp","sheetsAndPillowcase/christmasPrintDeerSmall.webp"]},
+  {category:"Sheets and pillow", title:"Tree print sheet", price:"US$38.00", imgUrl:["sheetsAndPillowcase/TreePrintSheet.webp","sheetsAndPillowcase/TreePrintSheetSmall.webp"]}
+]
+
+
