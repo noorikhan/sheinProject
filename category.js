@@ -373,7 +373,7 @@ function showProducts() {
   // });
 
   catDisplay("bedcat", "bedsDiv");
-  catDisplay("diningkitchencat", "diningkitchenDiv");
+  catDisplay("kitchencat", "kitchenDiv");
   catDisplay("decorecat", "decoreDiv");
 
   var slider = document.getElementById("myRange");
