@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #images {
+        display: grid;
+        grid-template-areas:
+          "s1 b b b"
+          "s2 b b b"
+          "s3 b b b"
+          ". b b b"
+          ". b b b";
+      }
+      #img1 {
+        grid-area: b;
+      }
+
+      #img2 {
+        grid-area: s1;
+      }
+
+      #img3 {
+        grid-area: s2;
+      }
+
+      #img4 {
+        grid-area: s3;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Product Details Page</h1>
+    <div id="images">
+      <div id="img1"></div>
+      <!-- <div id="img2"></div>
+      <div id="img3"></div>
+      <div id="img4"></div> -->
+    </div>
+  </body>
+</html>
+<script>
+  var productObj = JSON.parse(localStorage.getItem("seleProd"));
+  //   console.log(productObj);
+  var p = productObj.map(function (item) {
+    return item.price;
+  });
+
+  console.log(p);
+</script>
