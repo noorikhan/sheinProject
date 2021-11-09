@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0ae10de0e5.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       #container {
         width: 90%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
       }
 
       #catList {
-        padding: 3%;
-        width: 10%;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        padding: 2%;
+        width: 13%;
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
       }
 
+      #heartIcon {
+        display: flex;
+        justify-content: space-between;
+      }
       #boxs {
-        width: 68%;
+        width: 70%;
+        height: 50%;
       }
       #box {
         /* width: 60%; */
@@ -31,27 +40,66 @@
         grid-gap: 5%;
       }
 
-      #box > div {
+      /* #box > div {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-      }
+      } */
 
-      button {
+      /* button {
         width: 100%;
         height: 60px;
         font-size: 30px;
         background-color: green;
         color: white;
         border: 0px;
-      }
+      } */
 
       p,
-      h1 {
-        margin-left: 5%;
+      h4 {
+        margin: 0px;
+      }
+      #catList > h4 {
+        margin: 25px 0px 0px;
       }
       img {
         width: 100%;
+      }
+
+      img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        cursor: pointer;
+      }
+
+      .imageDive {
+        position: relative;
+        width: 100%;
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .imageDive:hover .middle {
+        opacity: 1;
+      }
+
+      .btn {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        width: 180px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
       }
 
       /* #cat {
@@ -194,97 +242,4 @@
     </div>
   </body>
 </html>
-<script>
-  var bedding = [
-    {
-      title: "1 pair Christmas print Pillowcase",
-      price: "US$10.00",
-      img: [
-        "beddingImages/img2.webp",
-        "beddingImages/img2.1.webp",
-        "beddingImages/img2.2.webp",
-        "beddingImages/img2.4.webp",
-      ],
-    },
-    {
-      title: "1pc plain Plush Blanket",
-      price: "US$54.00",
-      img: ["beddingImages/img1.webp"],
-    },
-    {
-      title: "1pair Fleece Pillowcase Without Filler",
-      price: "US$14.00",
-      img: ["beddingImages/img4.webp"],
-    },
-    {
-      title: "Butterfly Print Duvet Coever Set Without",
-      price: "US$37.00",
-      img: [
-        "beddingImages/img5.webp",
-        "beddingImages/img5.1.webp",
-        "beddingImages/img5.2.webp",
-      ],
-    },
-    {
-      title: "1pair Fleece Pillowcase Without Filler",
-      price: "US$15.00",
-      img: ["beddingImages/img3.webp", "beddingImages/img3.1.webp"],
-    },
-  ];
-
-  var body = document.getElementById("boxs");
-
-  var mainDiv = document.createElement("div");
-  mainDiv.setAttribute("id", "box");
-  body.append(mainDiv);
-  showProducts();
-
-  function showProducts() {
-    bedding.map(function (item) {
-      var box = document.createElement("div");
-
-      var image = document.createElement("img");
-      image.setAttribute("src", item.img[0]);
-
-      var h = document.createElement("h1");
-      h.textContent = item.title;
-
-      var p = document.createElement("p");
-      p.textContent = item.price;
-
-      var btn = document.createElement("button");
-      btn.textContent = "CHECKOUT";
-      btn.addEventListener("click", function (item) {
-        details(item);
-      });
-
-      box.append(image, h, p, btn);
-
-      mainDiv.append(box);
-    });
-
-    // document.querySelector("h3").addEventListener("click", function () {
-    //   document.querySelector("h3").textContent = "Category   -";
-    //   var cat = document.getElementById("cat");
-    //   cat.style.display = "inline";
-    // });
-
-    catDisplay("bedcat", "bedsDiv");
-    catDisplay("kitchencat", "kitchenDiv");
-    catDisplay("decorecat", "decoreDiv");
-
-    var slider = document.getElementById("myRange");
-    var p = document.querySelector("p");
-    p.innerHTML = `US$ ${slider.value}`;
-
-    slider.oninput = function () {
-      p.innerHTML = `US$ ${this.value}`;
-    };
-  }
-
-  function catDisplay(id1, id2) {
-    document.getElementById(id1).addEventListener("click", function () {
-      document.getElementById(id2).style.display = "inline";
-    });
-  }
-</script>
+<script src="category.js"></script>
