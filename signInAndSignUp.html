@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="signInUp.css" />
+		<title>Sign In | Sign Up</title>
+	</head>
+	<body>
+		<!-- header part -->
+		<header>
+			<div id="headingTwo">
+				<div id="lists">
+					<span id="women" class="colorChange">
+						WOMEN
+					</span>
+					<span id="curve+plus" class="colorChange">
+						CURVE + PLUS
+					</span>
+					<span id="kids" class="colorChange">
+						KIDS
+					</span>
+					<span id="men" class="colorChange">
+						MEN
+					</span>
+					<span id="beauty" class="colorChange">
+						BEAUTY
+					</span>
+					<span id="home" class="colorChange">
+						HOME
+					</span>
+				</div>
+				<div id="logo">
+					SHEIN
+				</div>
+				<div id="headerIcons">
+					<div class="icons iconColor" id="user">
+						<a href="#"><img src="/images/user.png" alt="sign in/sign up" /></a>
+						<div id="signInUpMenu">
+							<li>
+								<a href="signInAndSignUp.html" style="color: black;"
+									>Sign In / Register</a
+								>
+							</li>
+							<hr />
+							<li><a href="#">My Orders</a></li>
+							<li><a href="#">My Message</a></li>
+							<li><a href="#">My Coupons</a></li>
+							<li><a href="#">My Points</a></li>
+							<li><a href="#">Recently Viewed</a></li>
+							<li><a href="#">More Services</a></li>
+						</div>
+					</div>
+					<div class="icons iconColor cart" id="bags">
+						<img src="/images/shopping-bag.png" alt="sign in/sign up" />
+						<div class="prodCount">0</div>
+					</div>
+					<div class="icons iconColor cart" id="favs">
+						<img src="/images/heart.png" alt="sign in/sign up" />
+						<div class="prodCount">0</div>
+					</div>
+					<div class="icons iconColor" id="custCare">
+						<img src="/images/customer-support.png" alt="sign in/sign up" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="container">
+			<!-- sign in section -->
+			<div id="signIn">
+				<h2>Sign In</h2>
+				<form id="signInBtn">
+					<label class="text">Country/Region:</label>
+					<select id="country" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input id="email" class="userInput" type="email" required />
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input id="pass" class="userInput" type="password" required />
+					</div>
+					<input class="button" type="submit" value="SIGN IN" />
+				</form>
+				<p id="forgetPassword">Forgot your password?</p>
+				<div id="or">
+					<div></div>
+					<p>Or</p>
+					<div></div>
+				</div>
+				<div id="gmail">
+					<div>
+						<img src="/images/google-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Google
+					</div>
+				</div>
+				<div id="facebook">
+					<div>
+						<img src="/images/fb-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Facebook
+					</div>
+				</div>
+			</div>
+			<!-- vertical line section -->
+			<div id="vertLine"></div>
+			<!-- sign up section -->
+			<div id="signUp">
+				<h2>New To SHEIN</h2>
+				<form id="signUpBtn">
+					<label class="text">Country/Region:</label>
+					<select id="region" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input id="emailAddress" class="userInput" type="email" required />
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input id="password" class="userInput" type="password" required />
+					</div>
+					<div>
+						<label class="text">Confirm Password:</label>
+						<br />
+						<input id="cPassword" class="userInput" type="password" required />
+					</div>
+					<div id="privacyAndAgreement">
+						<div>
+							<input type="checkbox" required />
+						</div>
+						<div>
+							l agree to the
+							<a href="#" target="_blank">Privacy & Cookie Policy</a> and
+							<a href="#" target="_blank">Terms & Conditions</a>.
+						</div>
+					</div>
+					<input class="button" type="submit" value="REGISTER" />
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="signInUp.js"></script>
+</html>

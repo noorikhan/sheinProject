@@ -101,7 +101,6 @@ function showCategory() {
 
 var myIndex = 0;
 carousel();
-
 function carousel() {
 	var i;
 	var x = document.getElementsByClassName("mySlides");
@@ -115,3 +114,19 @@ function carousel() {
 	x[myIndex - 1].style.display = "block";
 	setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+// user tab
+document.getElementById("user").addEventListener("click", signInAndSignup);
+function signInAndSignup() {
+	window.location.href = "signInAndSignup.html";
+}
+
+// home tab
+document.getElementById("home").addEventListener("click", function () {
+	window.location.href = "home.html";
+});
+
+// logo
+document.getElementById("logo").addEventListener("click", function () {
+	window.location.href = "home.html";
+});
