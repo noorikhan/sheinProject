@@ -5,7 +5,7 @@ var categories = [
     title: "Christmas print Pillowcase",
     price: "US$10.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m"],
+    size: "s",
     imgUrl: [
       "/beddingImages/img2.webp",
       "/beddingImages/img2.1.webp",
@@ -19,7 +19,7 @@ var categories = [
     title: "plain Plush Blanket",
     price: "US$54.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["xl", "l"],
+    size: "xl",
     imgUrl: ["/beddingImages/img1.webp"],
   },
   {
@@ -28,7 +28,7 @@ var categories = [
     title: "Fleece Pillowcase Without Filler",
     price: "US$14.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["m", "xl", "l"],
+    size: "m",
     imgUrl: ["/beddingImages/img4.webp"],
   },
   {
@@ -37,7 +37,7 @@ var categories = [
     title: "Butterfly Print Duvet Coever Set Without",
     price: "US$37.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m"],
+    size: "m",
     imgUrl: [
       "/beddingCategory/img5.webp",
       "/beddingImages/img5.1.webp",
@@ -50,7 +50,7 @@ var categories = [
     title: "Fleece Pillowcase Without Filler",
     price: "US$15.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s"],
+    size: "s",
     imgUrl: ["/beddingImages/img3.webp", "/beddingImages/img3.1.webp"],
   },
   {
@@ -58,7 +58,7 @@ var categories = [
     SubCategory: "bedSkirt",
     title: "Pom Pom Bed Skirt",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["m", "xl", "l"],
+    size: "xl",
     price: "US$19.00",
     imgUrl: ["/beddingCategory/img1.webp", "/beddingCategory/img1.1.webp"],
   },
@@ -67,7 +67,7 @@ var categories = [
     SubCategory: "bedSkirt",
     title: "Plain Ruffle Bed Skirt",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["xl", "l"],
+    size: "l",
     price: "US$24.00",
     imgUrl: ["/beddingCategory/img2.webp"],
   },
@@ -76,7 +76,7 @@ var categories = [
     SubCategory: "bedSkirt",
     title: "Flower Print Bed Skirt",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "xl", "l"],
+    size: "s",
     price: "US$19.00",
     imgUrl: ["/beddingCategory/img3.webp"],
   },
@@ -85,7 +85,7 @@ var categories = [
     SubCategory: "bedSkirt",
     title: "Houndstooth pattern Bed Skirt",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "xl", "l"],
+    size: "xl",
     price: "US$35.00",
     imgUrl: ["/beddingCategory/img4.webp"],
   },
@@ -94,7 +94,7 @@ var categories = [
     SubCategory: "bedSkirt",
     title: "Plain Print Bed Skirt",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "xl", "l"],
+    size: "l",
     price: "US$35.00",
     imgUrl: ["/beddingCategory/img5.webp"],
   },
@@ -103,7 +103,7 @@ var categories = [
     SubCategory: "bedSpread",
     title: "Gradient color Spreadsheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "xl", "l"],
+    size: "s",
     price: "US$41.00",
     imgUrl: [
       "/beddingCategory/bedspreadandRunners/gradientColor.webp",
@@ -115,7 +115,7 @@ var categories = [
     SubCategory: "bedSpread",
     title: "Pizaa print spreadheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "l"],
+    size: "m",
     price: "US$28.00",
     imgUrl: [
       "/beddingCategory/bedspreadandRunners/pizaaPrint.webp",
@@ -127,7 +127,7 @@ var categories = [
     SubCategory: "bedSpread",
     title: "Star Print spreadsheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "l"],
+    size: "m",
     price: "US$33.00",
     imgUrl: [
       "/beddingCategory/bedspreadandRunners/starPrint.webp",
@@ -139,7 +139,7 @@ var categories = [
     SubCategory: "bedSpread",
     title: "christmas pattern spreasheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "l"],
+    size: "s",
     price: "US$40.00",
     imgUrl: [
       "/beddingCategory/bedspreadandRunners/christmasPattern.webp",
@@ -151,7 +151,7 @@ var categories = [
     SubCategory: "blankets",
     title: "christmas print blanket",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["m", "xl"],
+    size: "m",
     price: "US$28.00",
     imgUrl: [
       "/beddingCategory/blankets/christmasPrint.webp",
@@ -163,7 +163,7 @@ var categories = [
     SubCategory: "blankets",
     title: "christmas Santa print blanket",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "xl"],
+    size: "s",
     price: "US$32.99",
     imgUrl: [
       "/beddingCategory/blankets/christmasSanta.webp",
@@ -175,7 +175,7 @@ var categories = [
     SubCategory: "blankets",
     title: "halloween Spider print",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["m", "xl", "l"],
+    size: "s",
     price: "US$42.23",
     imgUrl: [
       "/beddingCategory/blankets/halloweenSpider.webp",
@@ -187,7 +187,7 @@ var categories = [
     SubCategory: "blankets",
     title: "christmas deer print blanket",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "l"],
+    size: "l",
     price: "US$72.00",
     imgUrl: [
       "/beddingCategory/blankets/christmas Deer blanket small.webp",
@@ -199,7 +199,7 @@ var categories = [
     subcategory: "sheetsAndPillow",
     title: "pillows Santa printed",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "xl", "l"],
+    size: "xl",
     price: "US$19.00",
     imgUrl: [
       "/beddingCategory/sheetsAndPillowcase/pillowSanta.webp",
@@ -211,7 +211,7 @@ var categories = [
     subcategory: "sheetsAndPillow",
     title: "Christmasn print sheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
-    size: ["s", "m", "xl", "l"],
+    size: "s",
     price: "US$27.00",
     imgUrl: [
       "/beddingCategory/sheetsAndPillowcase/chistmasPrintedSheet.webp",
@@ -224,7 +224,7 @@ var categories = [
     title: "Christmas print Deer",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     price: "US$21.00",
-    size: ["s", "m", "xl", "l"],
+    size: "m",
     imgUrl: [
       "/beddingCategory/sheetsAndPillowcase/christmasPrintDeer.webp",
       "/beddingCategory/sheetsAndPillowcase/christmasPrintDeerSmall.webp",
@@ -236,7 +236,7 @@ var categories = [
     title: "Tree print sheet",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     price: "US$38.00",
-    size: ["s", "m", "xl", "l"],
+    size: "s",
     imgUrl: [
       "/beddingCategory/sheetsAndPillowcase/TreePrintSheet.webp",
       "/beddingCategory/sheetsAndPillowcase/TreePrintSheetSmall.webp",
@@ -244,7 +244,7 @@ var categories = [
   },
   //this is dining and dinner category//
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kichen",
     title: "Elk spoon chirstmas",
     color: "gold",
@@ -256,7 +256,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kichen",
     title: "christmas pattern placemat",
     color: "gold",
@@ -268,7 +268,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kichen",
     title: "christmas slogan dinner",
     color: "red",
@@ -280,7 +280,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kichen",
     title: "christmas wine Glass set",
     color: "white",
@@ -292,7 +292,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kichen",
     title: "christmas elk print ",
     color: "black",
@@ -304,7 +304,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kitchen",
     title: "random floral apron",
     color: "random",
@@ -317,7 +317,7 @@ var categories = [
   },
 
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kitchen",
     title: "random color lunchbox",
     color: "random",
@@ -329,7 +329,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kitchen",
     title: "stainless steel garlic press",
     color: "silver",
@@ -341,7 +341,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kitchen",
     title: "stainless steel spoon",
     color: "silver",
@@ -353,7 +353,7 @@ var categories = [
     ],
   },
   {
-    category: "diningKitchen",
+    category: "kitchen",
     subcategory: "Kitchen",
     title: "gradient water bottle ",
     color: "gradient",
@@ -455,11 +455,17 @@ function catDisplay(id1, id2) {
 document.getElementById("checkBox").addEventListener("click", checkBoxFun);
 
 function checkBoxFun(e) {
-  console.log(e.target.value);
   var res = catObj.filter(function (item) {
-    return e.target.value == item.size[0];
+    return e.target.value == item.size;
   });
-  console.log(res);
+  showProducts(res);
+}
 
+document.getElementById("cat").addEventListener("click", catFun);
+
+function catFun(e) {
+  var res = catObj.filter(function (item) {
+    return e.target.value == item.category;
+  });
   showProducts(res);
 }

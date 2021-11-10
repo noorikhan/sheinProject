@@ -5,131 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="category.css" />
     <script
       src="https://kit.fontawesome.com/0ae10de0e5.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #container {
-        border: violet solid 1px;
-        display: flex;
-        justify-content: space-evenly;
-      }
-
-      #catList {
-        padding: 1%;
-        width: 12%;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-      }
-
-      #heartIcon {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      #boxs {
-        border: red solid 1px;
-        width: 84%;
-        display: grid;
-        grid-template-columns: repeat(4, 270px);
-        justify-content: space-evenly;
-        grid-gap: 1%;
-      }
-
-      #box {
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-      }
-
-      p,
-      h4,
-      h3 {
-        margin: 5px 0px 5px;
-      }
-
-      #catList > h4 {
-        margin: 25px 0px 5px;
-      }
-      img {
-        width: 100%;
-      }
-
-      img:hover {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        cursor: pointer;
-      }
-
-      .imageDive {
-        position: relative;
-        width: 100%;
-      }
-
-      .middle {
-        transition: 0.5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-      }
-
-      .imageDive:hover .middle {
-        opacity: 1;
-      }
-
-      .btn {
-        background-color: white;
-        color: black;
-        font-size: 12px;
-        width: 180px;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-      }
-
-      #bedsDiv {
-        display: none;
-      }
-      #kitchenDiv {
-        display: none;
-      }
-
-      #decoreDiv {
-        display: none;
-      }
-    </style>
   </head>
   <body>
+    <div class="buttonUpper">
+      <div class="home">
+        <span class="homeIcon">Home</span> <span>/</span> Home Picks
+      </div>
+      <img width="100%" src="blackfirdaycategoryUpper.gif" alt="" />
+    </div>
+    <div id="buttonContainer">
+      <a href="#"> <div class="buttonItem">Bedding</div></a>
+      <a href="#"><div class="buttonItem">Kitchen & Dining</div></a>
+      <a href="#"><div class="buttonItem">Home Decor</div></a>
+      <a href="#"> <div class="buttonItem">Home Essentials</div></a>
+      <a href="#"><div class="buttonItem">Storage & Organization</div></a>
+      <a href="#"><div class="buttonItem">Lighting & Lamp</div></a>
+      <a href="#"><div class="buttonItem">Bathroom</div></a>
+      <a href="#"><div class="buttonItem">Events & Party Suppl...</div></a>
+      <a href="#"><div class="buttonItem">Pet Supplies</div></a>
+      <a href="#"><div class="buttonItem">SHEIN BASIC LIVING</div></a>
+      <a href="#"><div class="buttonItem">Home Improvement</div></a>
+      <a href="#"><div class="buttonItem">Holiday</div></a>
+    </div>
     <div id="container">
       <div id="catList">
         <h3>Category</h3>
         <div id="cat">
-          <input type="radio" id="bedcat" value="beding" name="cat" />
+          <input type="radio" id="bedcat" value="bedding" name="cat" />
           <label for="bed">Bedding</label><br />
 
           <div id="bedsDiv">
             <input
               type="radio"
               id="bed"
-              value="beding"
+              value="bedding"
               name="beds"
               style="margin-left: 20px"
             />
             <label for="bed">Bed Skirts</label><br />
             <input
               type="radio"
-              id="kitchen"
-              value="kitchen"
+              id="bed"
+              value="bedding"
               name="beds"
               style="margin-left: 20px"
             />
-            <label for="kitchen">Bed Runners</label><br />
+            <label for="bed">Bed Runners</label><br />
             <input
               type="radio"
-              id="decore"
-              value="decore"
+              id="bed"
+              value="bedding"
               name="beds"
               style="margin-left: 20px"
             />
@@ -142,12 +72,12 @@
           <div id="kitchenDiv">
             <input
               type="radio"
-              id="bed"
-              value="beding"
+              id="kitchen"
+              value="kitchen"
               name="kitchen"
               style="margin-left: 20px"
             />
-            <label for="bed">Bakeware</label><br />
+            <label for="kitchen">Bakeware</label><br />
             <input
               type="radio"
               id="kitchen"
@@ -158,8 +88,8 @@
             <label for="kitchen">Barware</label><br />
             <input
               type="radio"
-              id="decore"
-              value="decore"
+              id="kitchen"
+              value="kitchen"
               name="kitchen"
               style="margin-left: 20px"
             />
@@ -172,20 +102,20 @@
           <div id="decoreDiv">
             <input
               type="radio"
-              id="bed"
-              value="beding"
+              id="decore"
+              value="decore"
               name="decore"
               style="margin-left: 20px"
             />
-            <label for="bed">Decorative pillows</label><br />
+            <label for="decore">Decorative pillows</label><br />
             <input
               type="radio"
-              id="kitchen"
-              value="kitchen"
+              id="decore"
+              value="decore"
               name="decore"
               style="margin-left: 20px"
             />
-            <label for="kitchen">Tapestry</label><br />
+            <label for="decore">Tapestry</label><br />
             <input
               type="radio"
               id="decore"
@@ -199,8 +129,8 @@
 
         <h4>Size</h4>
         <div id="checkBox">
-          <input type="checkbox" id="x" name="x" value="x" />
-          <label for="x"> X</label>
+          <input type="checkbox" id="s" name="x" value="s" />
+          <label for="s"> X</label>
           <input type="checkbox" id="xl" name="xl" value="xl" />
           <label for="xl">XL</label><br />
           <input type="checkbox" id="m" name="m" value="m" />
