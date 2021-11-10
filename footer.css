@@ -84,7 +84,7 @@ button {
 	color: white;
 	font-size: 17px;
 }
-input {
+#subscribe {
 	width: 400px;
 	height: 35px;
 }
@@ -111,8 +111,8 @@ input {
 	padding-right: 10px;
 	line-height: 25px;
 }
-span {
-	margin-left: 20px;
+.policy > span {
+	margin-left: 40px;
 }
 .payment {
 	/* border: 1px solid blue; */
