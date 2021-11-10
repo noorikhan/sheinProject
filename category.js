@@ -7,10 +7,10 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     imgUrl: [
-      "beddingImages/img2.webp",
-      "beddingImages/img2.1.webp",
-      "beddingImages/img2.2.webp",
-      "beddingImages/img2.4.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img2.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img2.1.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img2.2.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img2.4.webp",
     ],
   },
   {
@@ -20,9 +20,17 @@ var categories = [
     price: "US$54.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
-    imgUrl: ["beddingImages/img1.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingImages/img1.webp"],
   },
-
+  {
+    category: "bedding",
+    subcategory: "bedding",
+    title: "1pair Fleece Pillowcase Without Filler",
+    price: "US$14.00",
+    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    size: ["one-size", "s", "m", "xl", "l"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingImages/img4.webp"],
+  },
   {
     category: "bedding",
     subcategory: "bedding",
@@ -31,9 +39,9 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     imgUrl: [
-      "beddingImages/img5.webp",
-      "beddingImages/img5.1.webp",
-      "beddingImages/img5.2.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/img5.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img5.1.webp",
+      "/home/sumit/Desktop/sheinProject/beddingImages/img5.2.webp",
     ],
   },
   {
@@ -43,7 +51,7 @@ var categories = [
     price: "US$15.00",
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
-    imgUrl: ["beddingImages/img3.webp", "beddingImages/img3.1.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingImages/img3.webp", "/home/sumit/Desktop/sheinProject/beddingImages/img3.1.webp"],
   },
   {
     category: "bedding",
@@ -52,7 +60,7 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$19.00",
-    imgUrl: ["img1.webp", "img1.1.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingCategory/img1.webp", "/home/sumit/Desktop/sheinProject/beddingCategory/img1.1.webp"],
   },
   {
     category: "bedding",
@@ -61,7 +69,7 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$24.00",
-    imgUrl: ["img2.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingCategory/img2.webp"],
   },
   {
     category: "bedding",
@@ -70,7 +78,7 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$19.00",
-    imgUrl: ["img3.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingCategory/img3.webp"],
   },
   {
     category: "bedding",
@@ -79,7 +87,7 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$35.00",
-    imgUrl: ["img4.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingCategory/img4.webp"],
   },
   {
     category: "bedding",
@@ -88,7 +96,7 @@ var categories = [
     color: ["red", "green", "blue", "yellow", "black", "grey"],
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$35.00",
-    imgUrl: ["img5.webp"],
+    imgUrl: ["/home/sumit/Desktop/sheinProject/beddingCategory/img5.webp"],
   },
   {
     category: "bedding",
@@ -98,8 +106,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$41.00",
     imgUrl: [
-      "beddingCategory/bedspreadandRunners/gradientColor.webp",
-      "beddingCategory/bedspreadandRunners/gradientColorSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/gradientColor.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/gradientColorSmall.webp",
     ],
   },
   {
@@ -110,8 +118,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$28.00",
     imgUrl: [
-      "beddingCategory/bedspreadandRunners/pizaaPrint.webp",
-      "beddingCategory/bedspreadandRunners/pizzaPrintSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/pizaaPrint.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/pizzaPrintSmall.webp",
     ],
   },
   {
@@ -122,8 +130,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$33.00",
     imgUrl: [
-      "beddingCategory/bedspreadandRunners/starPrint.webp",
-      "beddingCategory/bedspreadandRunners/starPrintSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/starPrint.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/starPrintSmall.webp",
     ],
   },
   {
@@ -134,8 +142,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$40.00",
     imgUrl: [
-      "beddingCategory/bedspreadandRunners/christmasPattern.webp",
-      "beddingCategory/bedspreadandRunners/christmasPatternSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/christmasPattern.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/bedspreadandRunners/christmasPatternSmall.webp",
     ],
   },
   {
@@ -146,8 +154,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$28.00",
     imgUrl: [
-      "beddingCategory/blankets/christmasPrint.webp",
-      "beddingCategory/blankets/christmasPrintSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmasPrint.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmasPrintSmall.webp",
     ],
   },
   {
@@ -158,8 +166,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$32.99",
     imgUrl: [
-      "beddingCategory/blankets/christmasSanta.webp",
-      "beddingCategory/blankets/christmasSantaSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmasSanta.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmasSantaSmall.webp",
     ],
   },
   {
@@ -170,8 +178,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$42.23",
     imgUrl: [
-      "beddingCategory/blankets/halloweenSpider.webp",
-      "beddingCategory/blankets/halloweenSpiderSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/halloweenSpider.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/halloweenSpiderSmall.webp",
     ],
   },
   {
@@ -182,8 +190,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$72.00",
     imgUrl: [
-      "beddingCategory/blankets/Christmas Deer blanket.webp",
-      "beddingCategory/blankets/christmas Deer blanket small.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmas Deer blanket small.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/Christmas Deer blanket.webp",
     ],
   },
   {
@@ -194,8 +202,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$19.00",
     imgUrl: [
-      "beddingCategory/sheetsAndPillowcase/1pairpillowSanta.webp",
-      "beddingCategory/sheetsAndPillowcase/1pairpillowSantaSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/1pairpillowSanta.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/1pairpillowSantaSmall.webp",
     ],
   },
   {
@@ -206,8 +214,8 @@ var categories = [
     size: ["one-size", "s", "m", "xl", "l"],
     price: "US$27.00",
     imgUrl: [
-      "beddingCategory/sheetsAndPillowcase/chistmasPrintedSheet.webp",
-      "beddingCategory/sheetsAndPillowcase/christmasPrintedSheetSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/chistmasPrintedSheet.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/blankets/christmasPrintedSmall.webp",
     ],
   },
   {
@@ -218,8 +226,8 @@ var categories = [
     price: "US$21.00",
     size: ["one-size", "s", "m", "xl", "l"],
     imgUrl: [
-      "beddingCategory/sheetsAndPillowcase/christmasPrintDeer.webp",
-      "beddingCategory/sheetsAndPillowcase/christmasPrintDeerSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/christmasPrintDeer.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/christmasPrintDeerSmall.webp",
     ],
   },
   {
@@ -230,72 +238,74 @@ var categories = [
     price: "US$38.00",
     size: ["one-size", "s", "m", "xl", "l"],
     imgUrl: [
-      "beddingCategory/sheetsAndPillowcase/TreePrintSheet.webp",
-      "beddingCategory/sheetsAndPillowcase/TreePrintSheetSmall.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/TreePrintSheet.webp",
+      "/home/sumit/Desktop/sheinProject/beddingCategory/sheetsAndPillowcase/TreePrintSheetSmall.webp",
     ],
   },
   //this is dining and dinner category//
   {
-    category: "diningkitchen",
+    category: "diningKitchen",
     subcategory: "Kichen",
     title: "100pc Elk spoon chirstmas",
     color: "gold",
     size: "one-size",
     price: "US$4.00",
     imgUrl: [
-      "diningkitchen/100pcChristmasElkSpoon.webp",
-      "diningkitchen/100pcChristmasElkSpoonSmall.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/100pcChristmasElkSpoon.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/100pcChristmasElkSpoonSmall.webp",
     ],
   },
   {
-    category: "diningkitchen",
+    category: "diningKitchen",
     subcategory: "Kichen",
     title: "christmas pattern placemat",
     color: "gold",
     size: "one-size",
     price: "US$5.00",
     imgUrl: [
-      "diningkitchen/christamasPlacematPattern.webp",
-      "diningkitchen/christmasPatternPlacematSmall.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christamasPlacematPattern.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasPatternPlacematSmall.webp",
     ],
   },
   {
-    category: "diningkitchen",
+    category: "diningKitchen",
     subcategory: "Kichen",
     title: "christmas slogan dinner",
     color: "red",
     size: "one-size",
     price: "US$3.00",
     imgUrl: [
-      "diningkitchen/christmasSlogan.webp",
-      "diningkitchen/christmasSloganSmall.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasSlogan.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasSloganSmall.webp",
     ],
   },
   {
-    category: "diningkitchen",
+    category: "diningKitchen",
     subcategory: "Kichen",
     title: "christmas wine Glass set",
     color: "white",
     size: "one-size",
     price: "US$8.00",
     imgUrl: [
-      "diningkitchen/christmasWineGlass.webp",
-      "diningkitchen/christmasWineGlassSmalll.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasWineGlass.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasWineGlassSmalll.webp",
     ],
   },
   {
-    category: "diningkitchen",
+    category: "diningKitchen",
     subcategory: "Kichen",
     title: "christmas elk print ",
     color: "black",
     size: "one-size",
     price: "US$12.00",
     imgUrl: [
-      "diningkitchen/christmasElkPrint.webp",
-      "diningkitchen/christmasElkPrintSmall.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasElkPrint.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasElkPrintSmall.webp",
     ],
   },
 ];
+
+
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));
 
