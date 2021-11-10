@@ -2,7 +2,7 @@ var categories = [
 	{
 		category: "bedding",
 		subcategory: "bedding",
-		title: "1 pair Christmas print Pillowcase",
+		title: "Christmas print Pillowcase",
 		price: "US$10.00",
 		color: ["red", "green", "blue", "yellow", "black", "grey"],
 		size: ["one-size", "s", "m", "xl", "l"],
@@ -16,7 +16,7 @@ var categories = [
 	{
 		category: "bedding",
 		subcategory: "bedding",
-		title: "1pc plain Plush Blanket",
+		title: "plain Plush Blanket",
 		price: "US$54.00",
 		color: ["red", "green", "blue", "yellow", "black", "grey"],
 		size: ["one-size", "s", "m", "xl", "l"],
@@ -25,7 +25,7 @@ var categories = [
 	{
 		category: "bedding",
 		subcategory: "bedding",
-		title: "1pair Fleece Pillowcase Without Filler",
+		title: "Fleece Pillowcase Without Filler",
 		price: "US$14.00",
 		color: ["red", "green", "blue", "yellow", "black", "grey"],
 		size: ["one-size", "s", "m", "xl", "l"],
@@ -47,7 +47,7 @@ var categories = [
 	{
 		category: "bedding",
 		subcategory: "bedding",
-		title: "1pair Fleece Pillowcase Without Filler",
+		title: "Fleece Pillowcase Without Filler",
 		price: "US$15.00",
 		color: ["red", "green", "blue", "yellow", "black", "grey"],
 		size: ["one-size", "s", "m", "xl", "l"],
@@ -197,13 +197,13 @@ var categories = [
 	{
 		category: "bedding",
 		subcategory: "sheetsAndPillow",
-		title: "1 pair pillows Santa printed",
+		title: "pillows Santa printed",
 		color: ["red", "green", "blue", "yellow", "black", "grey"],
 		size: ["one-size", "s", "m", "xl", "l"],
 		price: "US$19.00",
 		imgUrl: [
-			"/beddingCategory/sheetsAndPillowcase/1pairpillowSanta.webp",
-			"/beddingCategory/sheetsAndPillowcase/1pairpillowSantaSmall.webp",
+			"/beddingCategory/sheetsAndPillowcase/pillowSanta.webp",
+			"/beddingCategory/sheetsAndPillowcase/pillowSantaSmall.webp",
 		],
 	},
 	{
@@ -246,13 +246,13 @@ var categories = [
 	{
 		category: "diningKitchen",
 		subcategory: "Kichen",
-		title: "100pc Elk spoon chirstmas",
+		title: "Elk spoon chirstmas",
 		color: "gold",
 		size: "one-size",
 		price: "US$4.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/100pcChristmasElkSpoon.webp",
-			"/diningkitchen/kitchen/100pcChristmasElkSpoonSmall.webp",
+			"/diningkitchen/kitchen/ChristmasElkSpoon.webp",
+			"/diningkitchen/kitchen/ChristmasElkSpoonSmall.webp",
 		],
 	},
 	{
@@ -306,62 +306,62 @@ var categories = [
 	{
 		category: "diningKitchen",
 		subcategory: "Kitchen",
-		title: "1pc random floral arpon",
+		title: "random floral arpon",
 		color: "random",
 		size: ["S", "M", "L", "XL"],
 		price: "US$8.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/1pc radnom floral apron.webp",
-			"/diningkitchen/kitchen/1pc random floral apron small.webp",
+			"/diningkitchen/kitchen/radnom floral apron.webp",
+			"/diningkitchen/kitchen/random floral apron small.webp",
 		],
 	},
 
 	{
 		category: "diningKitchen",
 		subcategory: "Kitchen",
-		title: "1pc random color lunchbox",
+		title: "random color lunchbox",
 		color: "random",
 		size: ["one-size"],
 		price: "US$12.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/1pc random color lunchbox .webp",
-			"/diningkitchen/kitchen/1pc random color lunchbox small.webp",
+			"/diningkitchen/kitchen/random color lunchbox .webp",
+			"/diningkitchen/kitchen/random color lunchbox small.webp",
 		],
 	},
 	{
 		category: "diningKitchen",
 		subcategory: "Kitchen",
-		title: "1pc stainless steel garlic press",
+		title: "stainless steel garlic press",
 		color: "silver",
 		size: ["one-size"],
 		price: "US$4.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/1pc stainless steel garlic press small.webp",
-			"/diningkitchen/kitchen/1pc stainless steel garlic press.webp",
+			"/diningkitchen/kitchen/stainless steel garlic press small.webp",
+			"/diningkitchen/kitchen/stainless steel garlic press.webp",
 		],
 	},
 	{
 		category: "diningKitchen",
 		subcategory: "Kitchen",
-		title: "4pc stainless steel spoon",
+		title: "stainless steel spoon",
 		color: "silver",
 		size: ["one-size"],
 		price: "US$3.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/4pc stainless steel spoon.webp",
-			"/diningkitchen/kitchen/4pc stainless steel spoon small.webp",
+			"/diningkitchen/kitchen/stainless steel spoon.webp",
+			"/diningkitchen/kitchen/stainless steel spoon small.webp",
 		],
 	},
 	{
 		category: "diningKitchen",
 		subcategory: "Kitchen",
-		title: "1pc gradient water bottle ",
+		title: "gradient water bottle ",
 		color: "gradient",
 		size: ["1000ml"],
 		price: "US$21.00",
 		imgUrl: [
-			"/diningkitchen/kitchen/1pc gradient water bottle.webp",
-			"/diningkitchen/kitchen/1pc gradient water  bottle small.webp",
+			"/diningkitchen/kitchen/gradient water bottle.webp",
+			"/diningkitchen/kitchen/gradient water  bottle small.webp",
 		],
 	},
 ];
