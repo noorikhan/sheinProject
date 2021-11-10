@@ -383,6 +383,8 @@ var categories = [
       "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc gradient water  bottle small.webp",
     ],
   },
+
+  
 ];
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));

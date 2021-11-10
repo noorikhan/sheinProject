@@ -64,6 +64,11 @@ span {
   justify-content: space-between;
 }
 
+#fav:hover {
+  color: red;
+  cursor: pointer;
+}
+
 #boxs {
   width: 84%;
   display: grid;
