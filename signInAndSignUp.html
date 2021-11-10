@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="kids.css" />
-		<title>KIDS</title>
+		<link rel="stylesheet" href="signInUp.css" />
+		<title>Sign In | Sign Up</title>
 	</head>
 	<body>
 		<!-- header part -->
@@ -67,83 +67,103 @@
 			</div>
 		</header>
 
-		<!-- kids middle part -->
 		<div id="container">
-			<div id="black_friday">
-				<a href="#"><img src="/images/black_friday.gif" alt="image" /></a>
+			<!-- sign in section -->
+			<div id="signIn">
+				<h2>Sign In</h2>
+				<form id="signInBtn">
+					<label class="text">Country/Region:</label>
+					<select id="country" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input id="email" class="userInput" type="email" required />
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input id="pass" class="userInput" type="password" required />
+					</div>
+					<input class="button" type="submit" value="SIGN IN" />
+				</form>
+				<p id="forgetPassword">Forgot your password?</p>
+				<div id="or">
+					<div></div>
+					<p>Or</p>
+					<div></div>
+				</div>
+				<div id="gmail">
+					<div>
+						<img src="/images/google-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Google
+					</div>
+				</div>
+				<div id="facebook">
+					<div>
+						<img src="/images/fb-logo.png" alt="" />
+					</div>
+					<div>
+						Sign In With Facebook
+					</div>
+				</div>
 			</div>
-			<h2>Shop By Category</h2>
-			<div id="shopByCategory">
-				<div>
-					<a href="#"><img src="/images/baby.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/toddler_boys.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/toddler_girls.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/boys.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/girls.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/bags_and_shoes.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"
-						><img src="/images/accessories_and_jewelry.png" alt="image"
-					/></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/maternity.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/family_looks.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/multipacks.png" alt="image" /></a>
-				</div>
-			</div>
-			<h2>#SHEINcampaigns</h2>
-			<div id="slider">
-				<ul id="slideWrap">
-					<li>
-						<a href="#">
-							<img src="/images/fall_winter_collection.jpeg" alt=""
-						/></a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/images/black_friday_shopping_guide.gif" alt=""
-						/></a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/images/ring_in_the_holidays.jpeg" alt=""
-						/></a>
-					</li>
-				</ul>
-			</div>
-			<div id="slider1">
-				<ul id="slideWrap1">
-					<li>
-						<a href="#"> <img src="/images/sponge_bob.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="#"> <img src="/images/warm_winter.jpeg" alt="" /></a>
-					</li>
-				</ul>
-			</div>
-			<h2>#dailydrops</h2>
-			<div id="new_arrivals">
-				<a href="#"><img src="/images/new_arrivals.png" alt="image" /></a>
-			</div>
-			<h2>#SHEINsale</h2>
-			<div id="sale">
-				<a href="#"><img src="/images/sale.png" alt="image" /></a>
+			<!-- vertical line section -->
+			<div id="vertLine"></div>
+			<!-- sign up section -->
+			<div id="signUp">
+				<h2>New To SHEIN</h2>
+				<form id="signUpBtn">
+					<label class="text">Country/Region:</label>
+					<select id="region" required>
+						<option value="">--SELECT--</option>
+						<option value="United States">United States</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="South Korea">South Korea</option>
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Thailand">Thailand</option>
+					</select>
+					<div>
+						<label class="text">Email Address:</label>
+						<br />
+						<input id="emailAddress" class="userInput" type="email" required />
+					</div>
+					<div>
+						<label class="text">Password:</label>
+						<br />
+						<input id="password" class="userInput" type="password" required />
+					</div>
+					<div>
+						<label class="text">Confirm Password:</label>
+						<br />
+						<input id="cPassword" class="userInput" type="password" required />
+					</div>
+					<div id="privacyAndAgreement">
+						<div>
+							<input type="checkbox" required />
+						</div>
+						<div>
+							l agree to the
+							<a href="#" target="_blank">Privacy & Cookie Policy</a> and
+							<a href="#" target="_blank">Terms & Conditions</a>.
+						</div>
+					</div>
+					<input class="button" type="submit" value="REGISTER" />
+				</form>
 			</div>
 		</div>
 
@@ -437,5 +457,5 @@
 			</div>
 		</footer>
 	</body>
-	<script src="kids.js"></script>
+	<script src="signInUp.js"></script>
 </html>

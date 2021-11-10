@@ -56,3 +56,24 @@ window.onload = function () {
 	responsiveSlider();
 	responsiveSlider1();
 };
+
+// user tab
+document.getElementById("user").addEventListener("click", signInAndSignup);
+function signInAndSignup() {
+	window.location.href = "signInAndSignup.html";
+}
+
+// home tab
+document.getElementById("home").addEventListener("click", function () {
+	window.location.href = "home.html";
+});
+
+// kids tab
+document.getElementById("kids").addEventListener("click", function () {
+	window.location.href = "kids.html";
+});
+
+// logo
+document.getElementById("logo").addEventListener("click", function () {
+	window.location.href = "home.html";
+});

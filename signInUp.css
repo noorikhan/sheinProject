@@ -70,110 +70,140 @@ img {
 	color: #7f8080;
 }
 
-/* kids middle part */
+/* signInUp part */
 #container {
-	/* border: 1px solid red; */
+	display: flex;
+	width: 800px;
 	margin: auto;
-	width: 95%;
-	height: 3520px;
-	cursor: pointer;
+	gap: 30px;
+	padding: 20px;
+	height: 550px;
+	margin-top: 60px;
 }
-#black_friday {
-	/* border: 1px solid purple; */
-	height: 720px;
+#signIn {
+	width: 40%;
+	height: 100%;
+	margin: auto;
 }
-#black_friday > a > img {
-	width: 100%;
+#vertLine {
+	border: 1px solid #e8e8e8;
+	margin: auto;
+	height: 100%;
+}
+#signUp {
+	width: 40%;
+	margin: auto;
+	height: 100%;
 }
 h2 {
 	text-align: center;
+}
+.button {
+	margin-top: 20px;
+	width: 100%;
+	background-color: #222222;
+	color: #fffffc;
+	height: 50px;
+	font-size: 20px;
 	font-weight: bold;
-	margin-top: 50px;
+	cursor: pointer;
 }
-#shopByCategory {
-	/* border: 1px solid blue; */
-	width: 88%;
-	height: 600px;
-	display: grid;
-	grid-template-columns: repeat(5, auto);
-	grid-template-rows: repeat(2, auto);
-	margin: auto;
+.button:hover {
+	background-color: rgb(87, 84, 84);
 }
-#shopByCategory > div {
-	width: 200px;
-	height: 260px;
-	margin: auto;
-	border-radius: 6%;
+.userInput {
+	width: 97.5%;
+	height: 30px;
 }
-#shopByCategory > div > a > img {
-	width: 100%;
-	border-radius: 6%;
+.text {
+	color: #8c7f74;
 }
-
-#slider {
-	position: relative;
-	width: 1428px;
-	height: 500px;
-	overflow: hidden;
+#signInBtn > select {
+	margin-bottom: 25px;
 }
-#slider ul {
-	position: relative;
-	list-style: none;
-	height: 100%;
-	width: 10000%;
-	padding: 0;
-	margin: 0;
-	transition: all 750ms ease;
-	left: 0;
+#signInBtn > div {
+	margin-bottom: 22px;
 }
-#slider ul li {
-	position: relative;
-	height: 100%;
-	float: left;
+#signUpBtn > select {
+	margin-bottom: 25px;
 }
-#slider ul li a img {
-	width: 1428px;
-	height: 500px;
+#signUpBtn > div {
+	margin-bottom: 22px;
 }
-#slider1 {
+#forgetPassword {
+	color: #8c7f74;
+	text-align: center;
+	font-size: 14px;
+}
+#forgetPassword:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: black;
+}
+#or {
+	display: flex;
+	flex-wrap: wrap;
+	height: 50px;
+	margin-bottom: 20px;
+}
+#or > div {
+	border: 1px solid #c5bdb6;
+	width: 45%;
+	height: 0px;
+	margin-top: 27px;
+}
+#or > p {
+	color: #c5bdb6;
+	text-align: center;
+	font-size: 14px;
+	padding: 2%;
+}
+#gmail,
+#facebook {
+	border: 1px solid #cecbcb;
+	display: flex;
+	height: 50px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#gmail > div,
+#facebook > div {
+	width: 30px;
+	height: 30px;
 	margin-top: 10px;
-	position: relative;
-	width: 1428px;
-	height: 500px;
-	overflow: hidden;
+	margin-left: 30px;
 }
-#slider1 ul {
-	position: relative;
-	list-style: none;
-	height: 100%;
-	width: 10000%;
-	padding: 0;
-	margin: 0;
-	transition: all 750ms ease;
-	left: 0;
+#gmail > div + div,
+#facebook > div + div {
+	width: 180px;
+	margin-left: 45px;
+	font-size: 20px;
+	padding-top: 5px;
+	color: #81807e;
 }
-#slider1 ul li {
-	position: relative;
-	height: 100%;
-	float: left;
+#facebook > div + div {
+	margin-left: 34.5px;
+	width: 200px;
 }
-#slider1 ul li a img {
-	width: 1428px;
-	height: 500px;
+#gmail:hover,
+#facebook:hover {
+	background-color: rgb(233, 227, 227);
 }
-#new_arrivals {
-	/* border: 1px solid purple; */
-	height: 476px;
+#privacyAndAgreement {
+	display: flex;
+	gap: 5px;
+	cursor: pointer;
+	font-size: 18px;
 }
-#new_arrivals > a > img {
-	width: 100%;
+#privacyAndAgreement > div {
+	color: #81807e;
 }
-#sale {
-	/* border: 1px solid purple; */
-	height: 318px;
+#privacyAndAgreement > div > input {
+	cursor: pointer;
 }
-#sale > a > img {
-	width: 100%;
+#privacyAndAgreement > div > a {
+	text-decoration: none;
+	color: #3272bb;
 }
 
 /* footer part */
@@ -184,6 +214,7 @@ h2 {
 	margin: auto;
 	background-color: #fafafa;
 	padding: 20px;
+	margin-top: 50px;
 }
 .firsthalf {
 	/* border: 1px solid green; */

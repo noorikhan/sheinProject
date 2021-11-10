@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="kids.css" />
-		<title>KIDS</title>
+		<link rel="stylesheet" href="home.css" />
+		<title>Home</title>
 	</head>
 	<body>
 		<!-- header part -->
@@ -67,83 +67,71 @@
 			</div>
 		</header>
 
-		<!-- kids middle part -->
+		<!-- home middle part -->
 		<div id="container">
-			<div id="black_friday">
-				<a href="#"><img src="/images/black_friday.gif" alt="image" /></a>
+			<div id="bigImage">
+				<a href="#"
+					><img
+						class="animatedGif"
+						src="https://img.ltwebstatic.com/images3_ach/2021/11/01/163573213408d427f781f85411867c124cd1148009.gif"
+				/></a>
 			</div>
-			<h2>Shop By Category</h2>
-			<div id="shopByCategory">
-				<div>
-					<a href="#"><img src="/images/baby.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/toddler_boys.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/toddler_girls.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/boys.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/girls.png" alt="image" /></a>
-				</div>
-				<div>
-					<a href="#"><img src="/images/bags_and_shoes.png" alt="image" /></a>
-				</div>
-				<div>
+
+			<div id="category">
+				<h1>Shop By Categories</h1>
+				<div id="categoryBox"></div>
+			</div>
+
+			<div id="campaigns">
+				<h1>#SHEINCampaigns</h1>
+				<div id="campaignsImg">
 					<a href="#"
-						><img src="/images/accessories_and_jewelry.png" alt="image"
+						><img
+							class="animatedGif mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/09/23/1632386030b2e3e797592f555ff399155f6048728b.gif"
+					/></a>
+					<a href="#"
+						><img
+							class="mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/15/1634264691c50422320e98be1d171a29e635b6b2c1.jpg"
+					/></a>
+					<a href="#"
+						><img
+							class="mySlides"
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/31/16356721566e4e0307cbdc98ba0cef7431a480075f.jpg"
 					/></a>
 				</div>
-				<div>
-					<a href="#"><img src="/images/maternity.png" alt="image" /></a>
+			</div>
+
+			<div id="brand">
+				<h1>Brands</h1>
+				<div id="brandImage">
+					<a href="#"
+						><img
+							src="https://img.ltwebstatic.com/images3_ach/2021/07/12/1626083492aa2f50066f18bf1207d968114b95f19d.webp"
+					/></a>
 				</div>
-				<div>
-					<a href="#"><img src="/images/family_looks.png" alt="image" /></a>
+			</div>
+
+			<div id="dailydrops">
+				<h1>#dailydrops</h1>
+				<div id="dailydropImage">
+					<a href="#"
+						><img
+							src="https://img.ltwebstatic.com/images3_ach/2021/10/31/163567250206f2dcf6a0e9576926adc763b71394ad.webp"
+					/></a>
 				</div>
-				<div>
-					<a href="#"><img src="/images/multipacks.png" alt="image" /></a>
+			</div>
+
+			<div id="sheinSale">
+				<h1>#SHEINsale</h1>
+				<div id="sheinSaleImage">
+					<a href="#"
+						><img
+							class="animatedGif"
+							src="https://img.ltwebstatic.com/images3_ach/2021/06/17/16239081902b19421e7be518a4143339b791b03edd.gif"
+					/></a>
 				</div>
-			</div>
-			<h2>#SHEINcampaigns</h2>
-			<div id="slider">
-				<ul id="slideWrap">
-					<li>
-						<a href="#">
-							<img src="/images/fall_winter_collection.jpeg" alt=""
-						/></a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/images/black_friday_shopping_guide.gif" alt=""
-						/></a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="/images/ring_in_the_holidays.jpeg" alt=""
-						/></a>
-					</li>
-				</ul>
-			</div>
-			<div id="slider1">
-				<ul id="slideWrap1">
-					<li>
-						<a href="#"> <img src="/images/sponge_bob.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="#"> <img src="/images/warm_winter.jpeg" alt="" /></a>
-					</li>
-				</ul>
-			</div>
-			<h2>#dailydrops</h2>
-			<div id="new_arrivals">
-				<a href="#"><img src="/images/new_arrivals.png" alt="image" /></a>
-			</div>
-			<h2>#SHEINsale</h2>
-			<div id="sale">
-				<a href="#"><img src="/images/sale.png" alt="image" /></a>
 			</div>
 		</div>
 
@@ -437,5 +425,35 @@
 			</div>
 		</footer>
 	</body>
-	<script src="kids.js"></script>
+
+	<script src="home.js"></script>
 </html>
+
+<!-- var body = document.querySelector("body");
+		
+var mainDiv = document.createElement("div");
+mainDiv.setAttribute("id", "container");
+body.append(mainDiv);
+showProducts();
+
+function showProducts() {
+	data.map(function (item) {
+		var box = document.createElement("div");
+		
+		var image = document.createElement("img");
+		image.setAttribute("src", item.image_url);
+		
+		var h = document.createElement("h1");
+		h.textContent = item.type;
+		
+		var p = document.createElement("p");
+	p.textContent = item.MRP;
+
+	var btn = document.createElement("button");
+	btn.textContent = "CHECKOUT";
+
+	box.append(image, h, p, btn);
+
+	mainDiv.append(box);
+});
+}  -->

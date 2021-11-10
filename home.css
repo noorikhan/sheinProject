@@ -70,110 +70,83 @@ img {
 	color: #7f8080;
 }
 
-/* kids middle part */
+/* home middle part */
 #container {
 	/* border: 1px solid red; */
-	margin: auto;
 	width: 95%;
-	height: 3520px;
+	margin: auto;
 	cursor: pointer;
 }
-#black_friday {
-	/* border: 1px solid purple; */
-	height: 720px;
-}
-#black_friday > a > img {
-	width: 100%;
-}
-h2 {
+h1 {
 	text-align: center;
-	font-weight: bold;
-	margin-top: 50px;
 }
-#shopByCategory {
+#categoryBox {
 	/* border: 1px solid blue; */
-	width: 88%;
-	height: 600px;
+	margin: auto;
+	width: 98%;
 	display: grid;
-	grid-template-columns: repeat(5, auto);
-	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(5, 250px);
+	grid-template-rows: repeat(3, 80px);
+	grid-gap: 15px;
+	justify-content: space-evenly;
+}
+#bigImage {
+	width: 96%;
+	height: 550px;
+	overflow: hidden;
 	margin: auto;
 }
-#shopByCategory > div {
-	width: 200px;
-	height: 260px;
+img.animatedGif {
+	width: 100%;
+	height: auto;
+}
+#boxes {
+	display: flex;
+	padding: 15px;
+	background-color: red;
+}
+#boxes > #imageBox {
+	width: 50px;
+}
+#boxes > #imageBox > img {
+	width: 100%;
+	filter: invert(100%);
+}
+#shopCatText {
+	padding-left: 15%;
+	color: white;
+	font-size: 16.3px;
+}
+#campaigns {
+	/* border: 1px solid blue; */
+	width: 96%;
 	margin: auto;
-	border-radius: 6%;
+	margin-top: 5%;
 }
-#shopByCategory > div > a > img {
-	width: 100%;
-	border-radius: 6%;
-}
-
-#slider {
-	position: relative;
-	width: 1428px;
-	height: 500px;
-	overflow: hidden;
-}
-#slider ul {
-	position: relative;
-	list-style: none;
-	height: 100%;
-	width: 10000%;
-	padding: 0;
-	margin: 0;
-	transition: all 750ms ease;
-	left: 0;
-}
-#slider ul li {
-	position: relative;
-	height: 100%;
-	float: left;
-}
-#slider ul li a img {
-	width: 1428px;
-	height: 500px;
-}
-#slider1 {
-	margin-top: 10px;
-	position: relative;
-	width: 1428px;
-	height: 500px;
-	overflow: hidden;
-}
-#slider1 ul {
-	position: relative;
-	list-style: none;
-	height: 100%;
-	width: 10000%;
-	padding: 0;
-	margin: 0;
-	transition: all 750ms ease;
-	left: 0;
-}
-#slider1 ul li {
-	position: relative;
-	height: 100%;
-	float: left;
-}
-#slider1 ul li a img {
-	width: 1428px;
-	height: 500px;
-}
-#new_arrivals {
-	/* border: 1px solid purple; */
-	height: 476px;
-}
-#new_arrivals > a > img {
+#campaignsImg > a > img {
 	width: 100%;
 }
-#sale {
-	/* border: 1px solid purple; */
-	height: 318px;
+#brand {
+	/* border: 1px solid blue; */
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
 }
-#sale > a > img {
+#brandImage > a > img {
 	width: 100%;
+}
+#dailydrops {
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
+}
+#dailydropImage > a > img {
+	width: 100%;
+}
+#sheinSale {
+	width: 96%;
+	margin: auto;
+	margin-top: 5%;
 }
 
 /* footer part */
