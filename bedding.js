@@ -320,6 +320,69 @@ var categories = [
       "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasElkPrintSmall.webp",
     ],
   },
+
+  {
+    category: "diningKitchen",
+    subcategory: "Kitchen",
+    title: "1pc random floral arpon",
+    color:"random",
+    size:["S","M","L","XL"],
+    price: "US$8.00",
+    imgUrl : [
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc radnom floral apron.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc random floral apron small.webp",
+    ],
+  },
+
+  {
+    category: "diningKitchen",
+    subcategory: "Kitchen",
+    title: "1pc random color lunchbox",
+    color:"random",
+    size:["one-size"],
+    price: "US$12.00",
+    imgUrl : [
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc random color lunchbox .webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc random color lunchbox small.webp",
+    ],
+    
+  },
+  {
+    category: "diningKitchen",
+    subcategory: "Kitchen",
+    title: "1pc stainless steel garlic press",
+    color:"silver",
+    size:["one-size"],
+    price: "US$4.00",
+    imgUrl : [
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc stainless steel garlic press small.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc stainless steel garlic press.webp",
+    ],
+  },
+  {
+    category: "diningKitchen",
+    subcategory: "Kitchen",
+    title: "4pc stainless steel spoon",
+    color:"silver",
+    size:["one-size"],
+    price: "US$3.00",
+    imgUrl : [
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/4pc stainless steel spoon small.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/4pc stainless steel spoon.webp",
+    ],
+  },
+  {
+    category: "diningKitchen",
+    subcategory: "Kitchen",
+    title: "1pc gradient water bottle ",
+    color:"gradient",
+    size:["1000ml"],
+    price: "US$21.00",
+    imgUrl : [
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc gradient water bottle.webp",
+      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/1pc gradient water  bottle small.webp",
+    ],
+  },
 ];
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));
