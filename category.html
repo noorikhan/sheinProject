@@ -13,9 +13,9 @@
   </head>
   <body>
     <div class="buttonUpper">
-      <div class="home">
+      <!-- <div class="home">
         <span class="homeIcon">Home</span> <span>/</span> Home Picks
-      </div>
+      </div> -->
       <img width="100%" src="blackfirdaycategoryUpper.gif" alt="" />
     </div>
     <div id="buttonContainer">
@@ -39,103 +39,22 @@
           <input type="radio" id="bedcat" value="bedding" name="cat" />
           <label for="bed">Bedding</label><br />
 
-          <div id="bedsDiv">
-            <input
-              type="radio"
-              id="bed"
-              value="bedding"
-              name="beds"
-              style="margin-left: 20px"
-            />
-            <label for="bed">Bed Skirts</label><br />
-            <input
-              type="radio"
-              id="bed"
-              value="bedding"
-              name="beds"
-              style="margin-left: 20px"
-            />
-            <label for="bed">Bed Runners</label><br />
-            <input
-              type="radio"
-              id="bed"
-              value="bedding"
-              name="beds"
-              style="margin-left: 20px"
-            />
-            <label for="decore">Bedspread & Sets</label><br />
-          </div>
-
           <input type="radio" id="kitchencat" value="kitchen" name="cat" />
           <label for="kitchen">Kitchen & Dining</label><br />
 
-          <div id="kitchenDiv">
-            <input
-              type="radio"
-              id="kitchen"
-              value="kitchen"
-              name="kitchen"
-              style="margin-left: 20px"
-            />
-            <label for="kitchen">Bakeware</label><br />
-            <input
-              type="radio"
-              id="kitchen"
-              value="kitchen"
-              name="kitchen"
-              style="margin-left: 20px"
-            />
-            <label for="kitchen">Barware</label><br />
-            <input
-              type="radio"
-              id="kitchen"
-              value="kitchen"
-              name="kitchen"
-              style="margin-left: 20px"
-            />
-            <label for="decore">Cofee & Teaware</label><br />
-          </div>
-
-          <input type="radio" id="decorecat" value="decore" name="cat" />
+          <input type="radio" id="decorecat" value="homeDecor" name="cat" />
           <label for="decore">Home Decore</label><br />
-
-          <div id="decoreDiv">
-            <input
-              type="radio"
-              id="decore"
-              value="decore"
-              name="decore"
-              style="margin-left: 20px"
-            />
-            <label for="decore">Decorative pillows</label><br />
-            <input
-              type="radio"
-              id="decore"
-              value="decore"
-              name="decore"
-              style="margin-left: 20px"
-            />
-            <label for="decore">Tapestry</label><br />
-            <input
-              type="radio"
-              id="decore"
-              value="decore"
-              name="decore"
-              style="margin-left: 20px"
-            />
-            <label for="decore">Wall Decore</label><br />
-          </div>
         </div>
 
         <h4>Size</h4>
-        <div id="checkBox">
-          <input type="checkbox" id="s" name="x" value="s" />
+        <div id="checkBoxs">
+          <input type="checkbox" id="s" name="size" value="s" />
           <label for="s"> X</label>
-          <input type="checkbox" id="xl" name="xl" value="xl" />
+          <input type="checkbox" id="xl" name="size" value="xl" />
           <label for="xl">XL</label><br />
-          <input type="checkbox" id="m" name="m" value="m" />
+          <input type="checkbox" id="m" name="size" value="m" />
           <label for="m"> M</label>
-          <input type="checkbox" id="l" name="l" value="l" />
+          <input type="checkbox" id="l" name="size" value="l" />
           <label for="l">L</label><br />
         </div>
 
@@ -153,8 +72,11 @@
         </div>
 
         <h4>Sort By</h4>
-        <p id="high">Price High To Low</p>
-        <p id="low">Price Low To High</p>
+        <select id="item">
+          <option value="">Select option</option>
+          <option value="l">Price Low To High</option>
+          <option value="h">Price High To Low</option>
+        </select>
       </div>
       <!-- <div id="product"></div> -->
     </div>

@@ -561,9 +561,9 @@ function productDetails(item) {
 //   cat.style.display = "inline";
 // });
 
-catDisplay("bedcat", "bedsDiv");
-catDisplay("kitchencat", "kitchenDiv");
-catDisplay("decorecat", "decoreDiv");
+// catDisplay("bedcat", "bedsDiv");
+// catDisplay("kitchencat", "kitchenDiv");
+// catDisplay("decorecat", "decoreDiv");
 
 var slider = document.getElementById("myRange");
 var p = document.querySelector("p");
@@ -574,13 +574,15 @@ slider.oninput = function () {
   p.innerHTML = svalue;
 };
 
-function catDisplay(id1, id2) {
-  document.getElementById(id1).addEventListener("click", function () {
-    document.getElementById(id2).style.display = "inline";
-  });
-}
+// function catDisplay(id1, id2) {
+//   document.getElementById(id1).addEventListener("click", function () {
+//     document.getElementById(id2).style.display = "inline";
+//   });
+// }
 
-document.getElementById("checkBox").addEventListener("click", checkBoxFun);
+//check box
+
+document.getElementById("checkBoxs").addEventListener("click", checkBoxFun);
 
 function checkBoxFun(e) {
   var res = catObj.filter(function (item) {
@@ -589,11 +591,24 @@ function checkBoxFun(e) {
   showProducts(res);
 }
 
+// categry filteration
 document.getElementById("cat").addEventListener("click", catFun);
 
 function catFun(e) {
   var res = catObj.filter(function (item) {
     return e.target.value == item.category;
+  });
+  showProducts(res);
+}
+
+//filter by price
+
+document.getElementById("item").addEventListener("change", priceFun);
+
+function priceFun(e) {
+  var res = catObj.sort(function (a, b) {
+    if (e.target.value == "l") return a.price - b.price;
+    else return b.price - a.price;
   });
   showProducts(res);
 }
