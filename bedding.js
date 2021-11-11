@@ -316,8 +316,8 @@ var categories = [
     size: "one-size",
     price: "US$12.00",
     imgUrl: [
-      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasElkPrint.webp",
-      "/home/sumit/Desktop/sheinProject/diningkitchen/kitchen/christmasElkPrintSmall.webp",
+      "sheinProject/diningkitchen/kitchen/christmasElkPrint.webp",
+      "sheinProject/diningkitchen/kitchen/christmasElkPrintSmall.webp",
     ],
   },
 
@@ -384,7 +384,84 @@ var categories = [
     ],
   },
 
+<<<<<<< Updated upstream
   
+=======
+  //home decor
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "1pc marble print wallpaper",
+    size: "one-size",
+    color: "red",
+    price : "US$21.00",
+    imgUrl : ["marble print wallpaper small.webp","marble print wallpaper.webp"],
+    
+  },
+ 
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "moon shaped tassesl home decor",
+    size: "one-size",
+    color: "silver",
+    price : "US$24.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/moon shaped tassel home decor  small.webp","moon shaped tassel home decor.webp"],
+         
+  },
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "plain plush home decor",
+    size: "one-size",
+    color: "silver",
+    price : "US$18.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/plain plush home decor small.webp","/home/sumit/Desktop/sheinProject/homeDecor/plain plush home decor small.webp"],
+         
+  },
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "slogan printed cushion cover",
+    size: "one-size",
+    color: "white",
+    price : "US$12.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/slogan printed cushion cover small.webp","/home/sumit/Desktop/sheinProject/homeDecor/slogan printed cushion cover.webp"],
+   
+  },
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "slogan printed mirror",
+    size: "one-size",
+    color: "random",
+    price : "US$19.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/slogan printed mirror small.webp","/home/sumit/Desktop/sheinProject/homeDecor/slogan printed mirror.webp"],
+   
+  },
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "sun printed tapestry",
+    size: "one-size",
+    color: "random",
+    price : "US$22.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/sun print tapestry.webp","/home/sumit/Desktop/sheinProject/homeDecor/sun print tapestry small.webp"],
+   
+  },
+  {
+    category: "homedecor",
+    subcategory: "home",
+    title: "toilet entrance sticker ",
+    size: "one-size",
+    color: "random",
+    price : "US$18.00",
+    imgUrl : ["/home/sumit/Desktop/sheinProject/homeDecor/toilet entrance sticker.webp","/home/sumit/Desktop/sheinProject/homeDecor/toilet entrance sticker small.webp"],
+   
+  },
+
+  //if image are not showing remove home/suumit/desktop from the image path
+>>>>>>> Stashed changes
 ];
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));
