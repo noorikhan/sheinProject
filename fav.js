@@ -6,6 +6,12 @@ mainDiv.setAttribute("id", "box");
 body.append(mainDiv);
 showProducts();
 
+if (favProductsData.length == 0) {
+	var msg = document.createElement("h1");
+	msg.textContent = "fav is empty";
+	body.append(msg);
+}
+
 function showProducts() {
 	favProductsData.map(function (item) {
 		var box = document.createElement("div");
@@ -29,7 +35,7 @@ function showProducts() {
 		div.setAttribute("id", "heartIcon");
 
 		var p = document.createElement("h4");
-		p.textContent = item.price;
+		p.textContent = `US $${item.price}`;
 
 		box.append(imgDiv, h, p, div);
 
