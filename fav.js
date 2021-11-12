@@ -8,8 +8,15 @@ showProducts();
 
 if (favProductsData.length == 0) {
 	var msg = document.createElement("h1");
-	msg.textContent = "fav is empty";
-	body.append(msg);
+	msg.setAttribute("id","msg");
+	// var favImg = document.createElement("img");
+	// favImg.setAttribute("id","favImg");
+	// favImg.setAttribute("src","images/favIcon.png")
+	msg.textContent = "Nothing In Wishlist";
+	var favDiv = document.createElement("div");
+	favDiv.setAttribute("id","favDiv");
+	favDiv.append(msg);
+	body.append(favDiv);
 }
 
 function showProducts() {
@@ -30,11 +37,13 @@ function showProducts() {
 
 		var h = document.createElement("div");
 		h.textContent = item.title;
+		h.setAttribute("id","title")
 
 		var div = document.createElement("div");
 		div.setAttribute("id", "heartIcon");
 
 		var p = document.createElement("h4");
+		p.setAttribute("id","price")
 		p.textContent = `US $${item.price}`;
 
 		box.append(imgDiv, h, p, div);
