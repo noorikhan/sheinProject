@@ -29,457 +29,180 @@ var countdown = () => {
 setInterval(countdown, 1000);
 
 var categories = [
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "bedding",
-  // 	title: "Christmas print Pillowcase",
-  // 	price: "10",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "s",
-  // 	imgUrl: [
-  // 		"/beddingImages/img2.webp",
-  // 		"/beddingImages/img2.1.webp",
-  // 		"/beddingImages/img2.2.webp",
-  // 		"/beddingImages/img2.4.webp",
-  // 	],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "bedding",
-  // 	title: "plain Plush Blanket",
-  // 	price: "54",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "xl",
-  // 	imgUrl: ["/beddingImages/img1.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "bedding",
-  // 	title: "Fleece Pillowcase Without Filler",
-  // 	price: "14",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "m",
-  // 	imgUrl: ["/beddingImages/img4.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "bedding",
-  // 	title: "Butterfly Print Duvet Coever Set Without",
-  // 	price: "37",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "m",
-  // 	imgUrl: [
-  // 		"/beddingCategory/img5.webp",
-  // 		"/beddingImages/img5.1.webp",
-  // 		"/beddingImages/img5.2.webp",
-  // 	],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "bedding",
-  // 	title: "Fleece Pillowcase Without Filler",
-  // 	price: "15",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "s",
-  // 	imgUrl: ["/beddingImages/img3.webp", "/beddingImages/img3.1.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "bedSkirt",
-  // 	title: "Pom Pom Bed Skirt",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "xl",
-  // 	price: "19",
-  // 	imgUrl: ["/beddingCategory/img1.webp", "/beddingCategory/img1.1.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "bedSkirt",
-  // 	title: "Plain Ruffle Bed Skirt",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "l",
-  // 	price: "24",
-  // 	imgUrl: ["/beddingCategory/img2.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "bedSkirt",
-  // 	title: "Flower Print Bed Skirt",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "s",
-  // 	price: "19",
-  // 	imgUrl: ["/beddingCategory/img3.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "bedSkirt",
-  // 	title: "Houndstooth pattern Bed Skirt",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "xl",
-  // 	price: "35",
-  // 	imgUrl: ["/beddingCategory/img4.webp"],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "bedSkirt",
-  // 	title: "Plain Print Bed Skirt",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "l",
-  // 	price: "35",
-  // 	imgUrl: ["/beddingCategory/img5.webp"],
-  // },
   {
     category: "bedding",
-    SubCategory: "bedSpread",
-    title: "Gradient color Spreadsheet",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Gradient Spreadsheet",
     size: "s",
     price: "41",
-    imgUrl: [
-      "/beddingCategory/bedspreadandRunners/gradientColor.webp",
-      "/beddingCategory/bedspreadandRunners/gradientColorSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/bedspreadandRunners/gradientColorSmall.webp",
   },
   {
     category: "bedding",
-    SubCategory: "bedSpread",
-    title: "Pizaa print spreadheet",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Pizaa Print Spreadheet",
     size: "m",
     price: "28",
-    imgUrl: [
-      "/beddingCategory/bedspreadandRunners/pizaaPrint.webp",
-      "/beddingCategory/bedspreadandRunners/pizzaPrintSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/bedspreadandRunners/pizaaPrint.webp",
   },
   {
     category: "bedding",
-    SubCategory: "bedSpread",
-    title: "Star Print spreadsheet",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Star Print Spreadsheet",
     size: "m",
     price: "33",
-    imgUrl: [
-      "/beddingCategory/bedspreadandRunners/starPrint.webp",
-      "/beddingCategory/bedspreadandRunners/starPrintSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/bedspreadandRunners/starPrint.webp",
   },
   {
     category: "bedding",
-    SubCategory: "bedSpread",
-    title: "christmas pattern spreasheet",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+
+    title: "Christmas Pattern Spreasheet",
     size: "s",
     price: "40",
-    imgUrl: [
-      "/beddingCategory/bedspreadandRunners/christmasPattern.webp",
-      "/beddingCategory/bedspreadandRunners/christmasPatternSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/bedspreadandRunners/christmasPattern.webp",
   },
-  // {
-  // 	category: "bedding",
-  // 	SubCategory: "blankets",
-  // 	title: "christmas print blanket",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "m",
-  // 	price: "28",
-  // 	imgUrl: [
-  // 		"/beddingCategory/blankets/christmasPrint.webp",
-  // 		"/beddingCategory/blankets/christmasPrintSmall.webp",
-  // 	],
-  // },
   {
     category: "bedding",
-    SubCategory: "blankets",
-    title: "christmas Santa print blanket",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Christmas Santa Print Blanket",
     size: "s",
     price: "32.99",
-    imgUrl: [
-      "/beddingCategory/blankets/christmasSanta.webp",
-      "/beddingCategory/blankets/christmasSantaSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/blankets/christmasSanta.webp",
   },
   {
     category: "bedding",
-    SubCategory: "blankets",
-    title: "halloween Spider print",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Halloween Spider Print",
     size: "s",
     price: "42.23",
-    imgUrl: [
-      "/beddingCategory/blankets/halloweenSpider.webp",
-      "/beddingCategory/blankets/halloweenSpiderSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/blankets/halloweenSpider.webp",
   },
   {
     category: "bedding",
-    SubCategory: "blankets",
-    title: "christmas deer print blanket",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Christmas Deer Print Blanket",
     size: "l",
     price: "72",
-    imgUrl: [
-      "/beddingCategory/blankets/christmas Deer blanket small.webp",
-      "/beddingCategory/blankets/Christmas Deer blanket.webp",
-    ],
+    imgUrl: "/beddingCategory/blankets/christmas Deer blanket small.webp",
   },
   {
     category: "bedding",
-    subcategory: "sheetsAndPillow",
-    title: "pillows Santa printed",
-    color: ["red", "green", "blue", "yellow", "black", "grey"],
+    title: "Pillows Santa Printed",
     size: "xl",
     price: "19",
-    imgUrl: [
-      "/beddingCategory/sheetsAndPillowcase/pillowSanta.webp",
-      "/beddingCategory/sheetsAndPillowcase/pillowSantaSmall.webp",
-    ],
+    imgUrl: "/beddingCategory/sheetsAndPillowcase/pillowSanta.webp",
   },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "sheetsAndPillow",
-  // 	title: "Christmasn print sheet",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	size: "s",
-  // 	price: "27",
-  // 	imgUrl: [
-  // 		"/beddingCategory/sheetsAndPillowcase/chistmasPrintedSheet.webp",
-  // 		"/beddingCategory/blankets/christmasPrintedSmall.webp",
-  // 	],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "sheetsAndPillow",
-  // 	title: "Christmas print Deer",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	price: "21",
-  // 	size: "m",
-  // 	imgUrl: [
-  // 		"/beddingCategory/sheetsAndPillowcase/christmasPrintDeer.webp",
-  // 		"/beddingCategory/sheetsAndPillowcase/christmasPrintDeerSmall.webp",
-  // 	],
-  // },
-  // {
-  // 	category: "bedding",
-  // 	subcategory: "sheetsAndPillow",
-  // 	title: "Tree print sheet",
-  // 	color: ["red", "green", "blue", "yellow", "black", "grey"],
-  // 	price: "38",
-  // 	size: "s",
-  // 	imgUrl: [
-  // 		"/beddingCategory/sheetsAndPillowcase/TreePrintSheet.webp",
-  // 		"/beddingCategory/sheetsAndPillowcase/TreePrintSheetSmall.webp",
-  // 	],
-  // },
   //this is dining and dinner category//
   {
     category: "kitchen",
-    subcategory: "Kichen",
-    title: "Elk spoon chirstmas",
-    color: "gold",
+    title: "Elk Spoon Chirstmas",
     size: "one-size",
     price: "4",
-    imgUrl: [
-      "/diningkitchen/kitchen/ChristmasElkSpoon.webp",
-      "/diningkitchen/kitchen/ChristmasElkSpoonSmall.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/ChristmasElkSpoon.webp",
   },
   {
     category: "kitchen",
-    subcategory: "Kichen",
-    title: "christmas pattern placemat",
-    color: "gold",
+    title: "Christmas Pattern Placemat",
     size: "one-size",
     price: "5",
-    imgUrl: [
-      "/diningkitchen/kitchen/christamasPlacematPattern.webp",
-      "/diningkitchen/kitchen/christmasPatternPlacematSmall.webp",
-    ],
-  },
-  // {
-  // 	category: "kitchen",
-  // 	subcategory: "Kichen",
-  // 	title: "christmas slogan dinner",
-  // 	color: "red",
-  // 	size: "one-size",
-  // 	price: "3",
-  // 	imgUrl: [
-  // 		"/diningkitchen/kitchen/christmasSlogan.webp",
-  // 		"/diningkitchen/kitchen/christmasSloganSmall.webp",
-  // 	],
-  // },
-  {
-    category: "kitchen",
-    subcategory: "Kichen",
-    title: "christmas wine Glass set",
-    color: "white",
-    size: "one-size",
-    price: "8",
-    imgUrl: [
-      "/diningkitchen/kitchen/christmasWineGlass.webp",
-      "/diningkitchen/kitchen/christmasWineGlassSmalll.webp",
-    ],
-  },
-  {
-    category: "kitchen",
-    subcategory: "Kichen",
-    title: "christmas elk print ",
-    color: "black",
-    size: "one-size",
-    price: "12",
-    imgUrl: [
-      "/diningkitchen/kitchen/christmasElkPrint.webp",
-      "/diningkitchen/kitchen/christmasElkPrintSmall.webp",
-    ],
-  },
-  {
-    category: "kitchen",
-    subcategory: "Kitchen",
-    title: "random floral apron",
-    color: "random",
-    size: "one-size",
-    price: "8",
-    imgUrl: [
-      "/diningkitchen/kitchen/radnom floral apron.webp",
-      "/diningkitchen/kitchen/random floral apron small.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/christamasPlacematPattern.webp",
   },
 
   {
     category: "kitchen",
-    subcategory: "Kitchen",
-    title: "random color lunchbox",
-    color: "random",
+    title: "Christmas Wine Glass Set",
+    size: "one-size",
+    price: "8",
+    imgUrl: "/diningkitchen/kitchen/christmasWineGlass.webp",
+  },
+  {
+    category: "kitchen",
+    title: "Christmas Elk Print ",
     size: "one-size",
     price: "12",
-    imgUrl: [
-      "/diningkitchen/kitchen/random color lunchbox .webp",
-      "/diningkitchen/kitchen/random color lunchbox small.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/christmasElkPrint.webp",
   },
   {
     category: "kitchen",
-    subcategory: "Kitchen",
-    title: "stainless steel garlic press",
-    color: "silver",
+    title: "Floral Apron",
+    size: "one-size",
+    price: "8",
+    imgUrl: "/diningkitchen/kitchen/radnom floral apron.webp",
+  },
+
+  {
+    category: "kitchen",
+    title: "Lunchbox",
+    size: "one-size",
+    price: "12",
+    imgUrl: "/diningkitchen/kitchen/random color lunchbox .webp",
+  },
+  {
+    category: "kitchen",
+    title: "Stainless Steel Garlic Press",
     size: "one-size",
     price: "4",
-    imgUrl: [
-      "/diningkitchen/kitchen/stainless steel garlic press small.webp",
-      "/diningkitchen/kitchen/stainless steel garlic press.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/stainless steel garlic press small.webp",
   },
   {
     category: "kitchen",
-    subcategory: "Kitchen",
-    title: "stainless steel spoon",
-    color: "silver",
+    title: "Stainless Steel Spoon",
     size: "one-size",
     price: "3",
-    imgUrl: [
-      "/diningkitchen/kitchen/stainless steel spoon.webp",
-      "/diningkitchen/kitchen/stainless steel spoon small.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/stainless steel spoon.webp",
   },
   {
     category: "kitchen",
-    subcategory: "Kitchen",
-    title: "gradient water bottle ",
-    color: "gradient",
+    title: "Gradient Water Bottle ",
     size: "1000ml",
     price: "21",
-    imgUrl: [
-      "/diningkitchen/kitchen/gradient water bottle.webp",
-      "/diningkitchen/kitchen/gradient water  bottle small.webp",
-    ],
+    imgUrl: "/diningkitchen/kitchen/gradient water bottle.webp",
   },
 
   //home decor
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "1pc marble print wallpaper",
+    title: "Marble Print Wallpaper",
     size: "one-size",
-    color: "red",
     price: "21",
-    imgUrl: [
-      "/homeDecor/marble print wallpaper small.webp",
-      "/homeDecor/marble print wallpaper.webp",
-    ],
+    imgUrl: "/homeDecor/marble print wallpaper small.webp",
   },
 
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "moon shaped tassesl home decor",
+    title: "Moon Shaped Tassesl Home decor",
     size: "one-size",
-    color: "silver",
     price: "24",
-    imgUrl: [
-      "/homeDecor/moon shaped tassel home decor  small.webp",
-      "/homeDecor/moon shaped tassel home decor.webp",
-    ],
+    imgUrl: "/homeDecor/moon shaped tassel home decor  small.webp",
   },
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "plain plush home decor",
+    title: "Plain Plush Home Decor",
     size: "one-size",
-    color: "silver",
     price: "18",
-    imgUrl: [
-      "/homeDecor/plain plush home decor small.webp",
-      "/homeDecor/plain plush home decor small.webp",
-    ],
+    imgUrl: "/homeDecor/plain plush home decor small.webp",
   },
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "slogan printed cushion cover",
+    title: "Slogan Printed Cushion Cover",
     size: "one-size",
-    color: "white",
     price: "12",
-    imgUrl: [
-      "/homeDecor/slogan printed cushion cover small.webp",
-      "/homeDecor/slogan printed cushion cover.webp",
-    ],
+    imgUrl: "/homeDecor/slogan printed cushion cover small.webp",
   },
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "slogan printed mirror",
+    title: "Slogan Printed Mirror",
     size: "one-size",
-    color: "random",
     price: "19",
-    imgUrl: [
-      "/homeDecor/slogan printed mirror small.webp",
-      "/homeDecor/slogan printed mirror.webp",
-    ],
+    imgUrl: "/homeDecor/slogan printed mirror small.webp",
   },
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "sun printed tapestry",
+    title: "Sun Printed Tapestry",
     size: "one-size",
-    color: "random",
     price: "22",
-    imgUrl: [
-      "/homeDecor/sun print tapestry.webp",
-      "/homeDecor/sun print tapestry small.webp",
-    ],
+    imgUrl: "/homeDecor/sun print tapestry.webp",
   },
   {
     category: "homeDecor",
-    subcategory: "home",
-    title: "toilet entrance sticker ",
+    title: "Toilet Entrance Sticker ",
     size: "one-size",
-    color: "random",
     price: "18.00",
-    imgUrl: [
-      "/homeDecor/toilet entrance sticker.webp",
-      "/homeDecor/toilet entrance sticker small.webp",
-    ],
+    imgUrl: "/homeDecor/toilet entrance sticker.webp",
   },
 ];
 
@@ -506,12 +229,12 @@ function showProducts(catObj) {
     imgDiv.setAttribute("class", "imageDive");
 
     var image = document.createElement("img");
-    image.setAttribute("src", item.imgUrl[0]);
+    image.setAttribute("src", item.imgUrl);
     image.addEventListener("click", function () {
       productDetails(item);
     });
 
-    var btnDiv = document.createElement("div");
+    var btnDiv = document.createElement("dv");
     btnDiv.setAttribute("class", "middle");
 
     var b = document.createElement("button");
@@ -593,9 +316,13 @@ slider.oninput = function () {
 
 slider.addEventListener("change", sliderFun);
 function sliderFun(e) {
-  var res = catObj.filter(function (item) {
-    return e.target.value >= item.price;
-  });
+  res = catObj
+    .sort(function (a, b) {
+      return a.price - b.price;
+    })
+    .filter(function (item) {
+      return item.price <= e.target.value;
+    });
   showProducts(res);
 }
 
