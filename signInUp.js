@@ -37,6 +37,25 @@ document.getElementById("beauty").addEventListener("click", function () {
 	window.location.href = "beauty.html";
 });
 
+// cart icon
+document.getElementById("bags").addEventListener("click", function () {
+	window.location.href = "cart.html";
+});
+
+// fav icon
+document.getElementById("favs").addEventListener("click", function () {
+	window.location.href = "fav.html";
+});
+
+var cartData = JSON.parse(localStorage.getItem("cartData"));
+var favProductsData = JSON.parse(localStorage.getItem("favProductsData"));
+// no. of cart items show when page is loading
+// no. of fav cart items show when page is loading
+window.onload = function () {
+	document.getElementById("bagItemsCount").textContent = cartData.length;
+	document.getElementById("favItemsCount").textContent = favProductsData.length;
+};
+
 var userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 function signUp(event) {
@@ -94,7 +113,7 @@ function checkUserDetails(email, pass, country) {
 			pass == userData[i].password &&
 			country == userData[i].country
 		) {
-			window.location.href = "header.html";
+			window.location.href = "home.html";
 			break;
 		} else if (
 			email == userData[i].emailAddress &&

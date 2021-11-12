@@ -233,11 +233,6 @@ a {
 	text-decoration: none;
 	color: gray;
 }
-a:hover {
-	color: black;
-	font-size: 17px;
-}
-
 .col-2 {
 	display: flex;
 	flex-direction: column;

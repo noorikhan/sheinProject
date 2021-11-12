@@ -75,3 +75,13 @@ document.getElementById("curve+plus").addEventListener("click", function () {
 document.getElementById("beauty").addEventListener("click", function () {
 	window.location.href = "beauty.html";
 });
+
+var cartData = JSON.parse(localStorage.getItem("cartData"));
+var favProductsData = JSON.parse(localStorage.getItem("favProductsData"));
+
+// no. of cart items show when page is loading
+// no. of fav cart items show when page is loading
+window.onload = function () {
+	document.getElementById("bagItemsCount").textContent = cartData.length;
+	document.getElementById("favItemsCount").textContent = favProductsData.length;
+};

@@ -125,7 +125,7 @@ img {
 }
 .ad {
 	width: 96%;
-	height: 650px;
+	height: 570px;
 	position: relative;
 	margin: auto;
 	overflow: hidden;
@@ -371,11 +371,6 @@ a {
 	text-decoration: none;
 	color: black;
 }
-a:hover {
-	color: black;
-	font-size: 17px;
-}
-
 .col-2 {
 	display: flex;
 	flex-direction: column;

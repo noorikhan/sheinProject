@@ -1,0 +1,355 @@
+body {
+	background-color: rgba(0, 0, 0, 0.062);
+}
+
+#container {
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#catList {
+	padding: 2%;
+	width: 13%;
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+#box {
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	justify-content: space-around;
+	grid-gap: 5%;
+	margin-top: 2%;
+}
+
+p,
+h4 {
+	margin: 0px;
+}
+#catList > h4 {
+	margin: 25px 0px 0px;
+}
+img {
+	width: 100%;
+}
+
+img:hover {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	cursor: pointer;
+}
+
+.imageDive {
+	position: relative;
+	width: 100%;
+	height: 332px;
+	/* border: 1px solid red; */
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.imageDive {
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#orderSummary {
+	text-align: center;
+	font-size: 18px;
+	font-style: oblique;
+	font-weight: 700;
+	color: black;
+}
+#price:hover {
+	font-size: 22px;
+
+	cursor: pointer;
+}
+#price {
+	font-size: 18px;
+	color: red;
+}
+
+#orderSummary {
+	background-color: white;
+	width: 450px;
+	margin: auto;
+	margin-top: 6%;
+	height: 150px;
+	color: black;
+	padding: 3%;
+	line-height: 10px;
+	float: right;
+	border-radius: 2%;
+	margin-bottom: 8%;
+}
+#order {
+	float: left;
+}
+
+#applyCode {
+	border-radius: 12px;
+	background-color: orangered;
+	color: white;
+	/* padding: 2%; */
+	float: left;
+}
+#checkOut {
+	border-radius: 12px;
+	background-color: orangered;
+	color: white;
+	padding: 1%;
+	float: left;
+	margin-left: 2%;
+}
+
+#applyCode:hover,
+#checkOut:hover {
+	background-color: teal;
+	/* font-size: 28px; */
+}
+
+#promoCode {
+	border-radius: 8px;
+	cursor: pointer;
+	float: left;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+#promoCode:focus {
+	background-color: yellowgreen;
+}
+#totalPrice {
+	display: block;
+	margin-top: 12%;
+	margin-left: -28%;
+	height: 30px;
+	padding-top: 5%;
+}
+#emptyImg {
+	width: 20%;
+	height: 50%;
+	padding-left: 100px;
+}
+
+#emptyDiv {
+	margin: auto;
+	background-color: white;
+	width: 17%;
+	margin-top: 22%;
+	color: rgba(0, 0, 0, 0.596);
+}
+
+/* header-css */
+
+#headingTwo {
+	display: flex;
+	background-color: #f7f8fa;
+}
+#lists {
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	width: 620px;
+	font-size: 20px;
+	gap: 20px;
+	padding-top: 15px;
+	color: #7f8080;
+}
+#logo {
+	width: 13%;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 42px;
+	margin-left: 20px;
+	color: #222222;
+	letter-spacing: 7px;
+}
+#headerIcons {
+	display: flex;
+	width: 700px;
+	justify-content: right;
+}
+.icons {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	margin-top: 3px;
+	padding: 10px;
+	margin-left: 10px;
+}
+img {
+	width: 100%;
+}
+.cart {
+	display: flex;
+	gap: 5px;
+}
+.prodCount {
+	font-size: 20px;
+}
+.colorChange:hover {
+	color: black;
+}
+.iconColor:hover {
+	background-color: white;
+}
+#signInUpMenu {
+	display: none;
+}
+#user:hover > #signInUpMenu {
+	display: block;
+	position: absolute;
+	padding: 1%;
+	background-color: white;
+}
+#user > #signInUpMenu > li {
+	list-style-type: none;
+	margin-bottom: 12px;
+}
+#user > #signInUpMenu > li > a {
+	text-decoration: none;
+	color: #7f8080;
+}
+
+/* footer-css */
+
+.container {
+	/* border: 1px solid red; */
+	/* max-width: 1250px; */
+	height: 400px;
+	margin: auto;
+	background-color: #fafafa;
+	padding: 20px;
+}
+.firsthalf {
+	/* border: 1px solid green; */
+	width: 100%;
+	height: 50%;
+	display: flex;
+	padding-left: 100px;
+}
+.col-1 {
+	/* border: 1px solid blue; */
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+.line-1 {
+	float: left;
+	width: 25%;
+	min-height: 1px;
+	margin-left: 10px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: gray;
+}
+.col-2 {
+	display: flex;
+	flex-direction: column;
+}
+.findUs {
+	width: 100%;
+}
+.findUs > ul > li {
+	float: left;
+}
+.last-inline > li {
+	float: left !important;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	line-height: 32px;
+	display: list-item;
+}
+
+.image {
+	border-style: none;
+
+	padding-left: 10px;
+}
+#app {
+	width: 40%;
+	/* border: 1px solid red; */
+	display: inline-block;
+}
+#row-1 {
+	width: 100%;
+	/* border: 1px solid red; */
+	display: inline-block;
+	align-items: left;
+	margin-left: -50px;
+}
+.icons > li {
+	float: left;
+}
+
+button {
+	height: 40px;
+	width: 100px;
+	background-color: black;
+	color: white;
+	font-size: 17px;
+}
+#subscribe {
+	width: 400px;
+	height: 35px;
+}
+.rowsecond {
+	/* border: 1px solid green; */
+	width: 100%;
+	height: 50%;
+	display: flex;
+	padding-left: 100px;
+	margin-top: 30px;
+}
+.policy {
+	/* border: 1px solid red; */
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 70px;
+}
+.first > ul > li {
+	float: left;
+	margin-right: 10px;
+	text-decoration: underline;
+	border-right: 1px solid gray;
+	padding-right: 10px;
+	line-height: 25px;
+}
+.policy > span {
+	margin-left: 40px;
+}
+.payment {
+	/* border: 1px solid blue; */
+	width: 50%;
+	height: 100%;
+}
+.paymentImg {
+	width: 20px;
+	height: 20px;
+}
+#payment-option > li {
+	float: left;
+	padding-right: 10px;
+}
