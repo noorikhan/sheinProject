@@ -8,8 +8,15 @@ showProducts();
 
 if (cartData.length == 0) {
 	var msg = document.createElement("h1");
-	msg.textContent = "cart is empty";
-	body.append(msg);
+	
+	msg.textContent = "Your cart is empty";
+	var emptyDiv = document.createElement("div");
+	emptyDiv.setAttribute("id","emptyDiv");
+    var emptyImg = document.createElement("img");
+	emptyImg.setAttribute("id","emptyImg");
+	emptyImg.setAttribute("src","images/emptyCart.png")
+	emptyDiv.append(emptyImg,msg)
+	body.append(emptyDiv);
 }
 
 function showProducts() {

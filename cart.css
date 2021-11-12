@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.062);
 }
 
 #container {
@@ -68,7 +68,7 @@ div {
 	font-size: 18px;
 	font-style: oblique;
 	font-weight: 700;
-	color: white;
+	color: black;
 }
 #price:hover {
 	font-size: 22px;
@@ -133,4 +133,16 @@ div {
 	margin-left: -28%;
 	height: 30px;
 	padding-top: 5%;
+}
+#emptyImg{
+	width: 20%;
+	height: 50%;
+}
+
+#emptyDiv{
+	margin: auto;
+	background-color: white;
+	width: 33%;
+	margin-top: 22%;
+	color: rgba(0, 0, 0, 0.596);
 }
