@@ -1,4 +1,4 @@
-body{
+body {
 	background-color: black;
 }
 
@@ -17,7 +17,6 @@ body{
 }
 
 #box {
-	 
 	display: grid;
 	grid-template-columns: repeat(4, 250px);
 	justify-content: space-around;
@@ -32,7 +31,6 @@ h4 {
 	margin: 25px 0px 0px;
 }
 img {
-
 	width: 100%;
 }
 
@@ -45,6 +43,8 @@ img:hover {
 .imageDive {
 	position: relative;
 	width: 100%;
+	height: 332px;
+	/* border: 1px solid red; */
 }
 
 .middle {
@@ -57,83 +57,80 @@ img:hover {
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
 }
-.imageDive{
-    
-	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, 
-	rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, 
-	rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.imageDive {
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-div{
+div {
 	text-align: center;
 	font-size: 18px;
 	font-style: oblique;
 	font-weight: 700;
 	color: white;
 }
-#price:hover{
+#price:hover {
 	font-size: 22px;
 
 	cursor: pointer;
 }
-#price{
+#price {
 	font-size: 18px;
 	color: red;
 }
 
-#orderSummary{
+#orderSummary {
 	background-color: white;
 	width: 450px;
-    margin: auto;
+	margin: auto;
 	margin-top: 6%;
-   height: 150px;
-   color: black;
-   padding: 3%;	
-   line-height: 10px;
-   float: right;
-   border-radius: 2%;
+	height: 150px;
+	color: black;
+	padding: 3%;
+	line-height: 10px;
+	float: right;
+	border-radius: 2%;
 }
-#order{
+#order {
 	float: left;
 }
 
-#applyCode{
+#applyCode {
 	border-radius: 12px;
-	background-color:orangered;
+	background-color: orangered;
 	color: white;
 	padding: 1%;
-    float: left;
-	
+	float: left;
 }
-#checkOut{
+#checkOut {
 	border-radius: 12px;
-	background-color:orangered;
+	background-color: orangered;
 	color: white;
 	padding: 1%;
 	float: left;
 	margin-left: 2%;
 }
 
-#applyCode:hover,#checkOut:hover{
+#applyCode:hover,
+#checkOut:hover {
 	background-color: teal;
-	font-size: 28px;
+	/* font-size: 28px; */
 }
 
-#promoCode{
-     border-radius: 8px;
-	 cursor: pointer;
-	 float: left;
+#promoCode {
+	border-radius: 8px;
+	cursor: pointer;
+	float: left;
 }
 
-#promoCode:focus{
+#promoCode:focus {
 	background-color: teal;
-	
 }
-#totalPrice{
+#totalPrice {
 	display: block;
 	margin-top: 12%;
 	margin-left: -28%;
 	height: 30px;
 	padding-top: 5%;
-	
 }
