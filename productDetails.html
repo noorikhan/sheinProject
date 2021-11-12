@@ -16,9 +16,47 @@
         justify-content: space-evenly;
       }
 
+      /* #prodImages {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+      } */
+
       img {
         width: 100%;
       }
+
+      .btmBorder {
+        border-bottom: 1px dotted gray;
+      }
+
+      #size {
+        border: 1px solid black;
+        width: 60%;
+        text-align: center;
+      }
+      #qty {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #qty > h2 {
+        margin: 0px;
+      }
+
+      #bag {
+        margin-top: 10%;
+      }
+
+      #bBtn {
+        background-color: black;
+        border: none;
+        width: 60%;
+        color: white;
+        padding: 5%;
+        margin-right: 4%;
+      }
+
       #images {
         width: 50%;
         display: grid;
@@ -41,23 +79,18 @@
         grid-area: s2;
       }
 
-      #img4 {
-        grid-area: s3;
-      }
     </style>
   </head>
   <body>
     <div id="prodDetailsContainer">
-      
-      <div id="images">
-        <div id="img2" class="box"></div>
-        <div id="img3" class="box"></div>
-      </div>
-      <div id="displayImge">
+      <!-- <div id="images"> -->
         <div id="img1" class="box"></div>
-      </div>
+        <div id="img2" class="box"></div>
+      <!-- </div> -->
+      <!-- <div id="displayImge"> -->
+        <div id="img3" class="box"></div>
+      <!-- </div> -->
 
-      
       <div id="details">
         <div class="btmBorder">
           <h5></h5>
@@ -69,12 +102,12 @@
           <h3>Qty:</h3>
           <div id="qty">
             <i class="fas fa-minus" id="minus"></i>
-            <h2 id="count"></h2>
+            <h2 id="count">1</h2>
             <i class="fas fa-plus" id="plus"></i>
           </div>
         </div>
-        <div>
-          <button>ADD TO BAG</button>
+        <div id="bag">
+          <button id="bBtn">ADD TO BAG</button>
           <i class="far fa-heart"></i>
         </div>
       </div>
@@ -96,17 +129,15 @@
     document.getElementById("img2").append(sImg1);
 
     var sImg2 = document.createElement("img");
-    sImg2.setAttribute("src", productObj.imgUrl[2]);
+    sImg2.setAttribute("src", productObj.imgUrl[1]);
     document.getElementById("img3").append(sImg2);
   }
-
-  var count = JSON.parse(localStorage.getItem("counter")) || 1;
 
   function displayDetails() {
     document.getElementById("count").textContent = 1;
 
     document.querySelector("h5").textContent = productObj.title;
-    document.querySelector("h1").textContent = productObj.price;
+    document.querySelector("h1").textContent = `US$${productObj.price}`;
     document.getElementById(
       "size"
     ).innerHTML = `<h3>${productObj.size[0]}</h3>`;

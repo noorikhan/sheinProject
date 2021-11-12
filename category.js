@@ -357,7 +357,7 @@ var categories = [
     subcategory: "Kitchen",
     title: "gradient water bottle ",
     color: "gradient",
-    size: ["1000ml"],
+    size: "1000ml",
     price: "21",
     imgUrl: [
       "/diningkitchen/kitchen/gradient water bottle.webp",
@@ -372,7 +372,7 @@ var categories = [
     title: "1pc marble print wallpaper",
     size: "one-size",
     color: "red",
-    price: "US$21.00",
+    price: "21",
     imgUrl: [
       "/homeDecor/marble print wallpaper small.webp",
       "/homeDecor/marble print wallpaper.webp",
@@ -385,7 +385,7 @@ var categories = [
     title: "moon shaped tassesl home decor",
     size: "one-size",
     color: "silver",
-    price: "US$24.00",
+    price: "24",
     imgUrl: [
       "/homeDecor/moon shaped tassel home decor  small.webp",
       "/homeDecor/moon shaped tassel home decor.webp",
@@ -397,7 +397,7 @@ var categories = [
     title: "plain plush home decor",
     size: "one-size",
     color: "silver",
-    price: "US$18.00",
+    price: "18",
     imgUrl: [
       "/homeDecor/plain plush home decor small.webp",
       "/homeDecor/plain plush home decor small.webp",
@@ -409,7 +409,7 @@ var categories = [
     title: "slogan printed cushion cover",
     size: "one-size",
     color: "white",
-    price: "US$12.00",
+    price: "12",
     imgUrl: [
       "/homeDecor/slogan printed cushion cover small.webp",
       "/homeDecor/slogan printed cushion cover.webp",
@@ -421,7 +421,7 @@ var categories = [
     title: "slogan printed mirror",
     size: "one-size",
     color: "random",
-    price: "US$19.00",
+    price: "19",
     imgUrl: [
       "/homeDecor/slogan printed mirror small.webp",
       "/homeDecor/slogan printed mirror.webp",
@@ -433,7 +433,7 @@ var categories = [
     title: "sun printed tapestry",
     size: "one-size",
     color: "random",
-    price: "US$22.00",
+    price: "22",
     imgUrl: [
       "/homeDecor/sun print tapestry.webp",
       "/homeDecor/sun print tapestry small.webp",
@@ -445,14 +445,12 @@ var categories = [
     title: "toilet entrance sticker ",
     size: "one-size",
     color: "random",
-    price: "US$18.00",
+    price: "18.00",
     imgUrl: [
       "/homeDecor/toilet entrance sticker.webp",
       "/homeDecor/toilet entrance sticker small.webp",
     ],
   },
-
-  //if image are not showing remove home/suumit/desktop from the image path
 ];
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));
@@ -555,40 +553,33 @@ function productDetails(item) {
   window.location.href = "productDetails.html";
 }
 
-// document.querySelector("h3").addEventListener("click", function () {
-//   document.querySelector("h3").textContent = "Category   -";
-//   var cat = document.getElementById("cat");
-//   cat.style.display = "inline";
-// });
-
-// catDisplay("bedcat", "bedsDiv");
-// catDisplay("kitchencat", "kitchenDiv");
-// catDisplay("decorecat", "decoreDiv");
-
 var slider = document.getElementById("myRange");
 var p = document.querySelector("p");
-p.innerHTML = `US${slider.value}`;
+p.innerHTML = `US$${slider.value}`;
 
 slider.oninput = function () {
-  svalue = `US$${this.value}`;
-  p.innerHTML = svalue;
+  p.innerHTML = `US$${this.value}`;
 };
 
-// function catDisplay(id1, id2) {
-//   document.getElementById(id1).addEventListener("click", function () {
-//     document.getElementById(id2).style.display = "inline";
-//   });
-// }
+slider.addEventListener("change", sliderFun);
+function sliderFun(e) {
+  var res = catObj.filter(function (item) {
+    return e.target.value >= item.price;
+  });
+  showProducts(res);
+}
 
 //check box
 
 document.getElementById("checkBoxs").addEventListener("click", checkBoxFun);
 
+var checkRes = [];
 function checkBoxFun(e) {
   var res = catObj.filter(function (item) {
     return e.target.value == item.size;
   });
-  showProducts(res);
+  checkRes.push(...res);
+  showProducts(checkRes);
 }
 
 // categry filteration
@@ -609,6 +600,19 @@ function priceFun(e) {
   var res = catObj.sort(function (a, b) {
     if (e.target.value == "l") return a.price - b.price;
     else return b.price - a.price;
+  });
+  showProducts(res);
+}
+
+//clickable category btn
+
+document.getElementById("bedding").addEventListener("click", btnCatFun);
+document.getElementById("kitchen").addEventListener("click", btnCatFun);
+document.getElementById("homeDecor").addEventListener("click", btnCatFun);
+
+function btnCatFun(e) {
+  var res = catObj.filter(function (item) {
+    return e.target.id == item.category;
   });
   showProducts(res);
 }
