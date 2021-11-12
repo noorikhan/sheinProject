@@ -168,18 +168,18 @@ a:active > .buttonItem {
 #container {
   /* border: springgreen 1px solid; */
   /* height: 80%; */
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   justify-content: space-evenly;
 }
 
-#product {
+/* #product {
   width: 80%;
   height: 2600px;
   /* border: rebeccapurple 1px solid; */
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
-}
+} */ */
 
 #catList {
   /* border: red 1px solid; */

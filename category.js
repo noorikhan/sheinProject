@@ -489,7 +489,7 @@ var catObj = JSON.parse(localStorage.getItem("categoryProducts")) || [];
 var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 var favProductsData = JSON.parse(localStorage.getItem("favProductsData")) || [];
 
-var body = document.getElementById("product");
+var body = document.getElementById("container");
 
 var mainDiv = document.createElement("div");
 mainDiv.setAttribute("id", "boxs");
