@@ -75,7 +75,7 @@ var category = [
 	},
 	{
 		title: "Outerwear",
-		img: "images/outerwear.png",
+		img: "images/outer_wear.png",
 	},
 	{
 		title: "Activewear",
