@@ -31,64 +31,56 @@ setInterval(countdown, 1000);
 var categories = [
   {
     category: "bedding",
-    title: "Gradient Spreadsheet",
+    title: "Beauty Blender",
     size: "s",
     price: "41",
-    imgUrl:
-      "/beautyImages/1599446770e0515ef309fb8de27f85c3b0c030a851_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Beauty Blender.webp",
   },
   {
     category: "bedding",
-    title: "Pizaa Print Spreadheet",
+    title: "Compact Powder",
     size: "m",
     price: "28",
-    imgUrl:
-      "/beautyImages/1629854417d0a7974ea3671deed87494f65f990932_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Compact Powder.webp",
   },
   {
     category: "bedding",
-    title: "Star Print Spreadsheet",
+    title: "Deeply Cleanser",
     size: "m",
     price: "33",
-    imgUrl:
-      "/beautyImages/1631155189a9489a780f0225c5f329751e3060bae1_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Deeply Cleaner.webp",
   },
   {
     category: "bedding",
-
-    title: "Christmas Pattern Spreasheet",
+    title: "Liquid Matte Lipstick",
     size: "s",
     price: "40",
-    imgUrl:
-      "/beautyImages/1631155202f26ab19bb51b4eca3d2e130833d4a93b_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Liquid Matte Lipstick .webp",
   },
   {
     category: "bedding",
-    title: "Christmas Santa Print Blanket",
+    title: "Gently Cleanser",
     size: "s",
     price: "32.99",
-    imgUrl:
-      "/beautyImages/1631155202f57fd75bb270a3241311ad5895a63fd5_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Gently Cleaner.webp",
   },
   {
     category: "bedding",
-    title: "Halloween Spider Print",
+    title: "Makeup Brush",
     size: "s",
     price: "42.23",
-    imgUrl:
-      "/beautyImages/1634895596b352dfe5ed5eb7a42ea79e3ac716c0cf_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Makeup brush.webp",
   },
   {
     category: "bedding",
-    title: "Christmas Deer Print Blanket",
+    title: "Effective Cleanser",
     size: "l",
     price: "72",
-    imgUrl:
-      "/beautyImages/16007614381f7f98bf556d79a28c83e13d28eefe35_thumbnail_405x552.webp",
+    imgUrl: "/beautyImages/Effective Cleaner.webp",
   },
   {
     category: "bedding",
-    title: "Pillows Santa Printed",
+    title: "Bamboo Face Mask",
     size: "xl",
     price: "19",
     imgUrl: "/beautyImages/Bamboo Face Mask.webp",
@@ -96,14 +88,14 @@ var categories = [
   //this is dining and dinner category//
   {
     category: "kitchen",
-    title: "Elk Spoon Chirstmas",
+    title: "Set Of Beauty Brush",
     size: "one-size",
     price: "4",
     imgUrl: "/beautyImages/Beauty .webp",
   },
   {
     category: "kitchen",
-    title: "Christmas Pattern Placemat",
+    title: "Cheek Blush",
     size: "one-size",
     price: "5",
     imgUrl: "/beautyImages/Cheek Blush.webp",
@@ -111,21 +103,21 @@ var categories = [
 
   {
     category: "kitchen",
-    title: "Christmas Wine Glass Set",
+    title: "Combo Skin Cleanser",
     size: "one-size",
     price: "8",
     imgUrl: "/beautyImages/Combo Skin Cleanser.webp",
   },
   {
     category: "kitchen",
-    title: "Christmas Elk Print ",
+    title: "Dry Skin Cleanser",
     size: "one-size",
     price: "12",
     imgUrl: "/beautyImages/Dry Skin Cleanser.webp",
   },
   {
     category: "kitchen",
-    title: "Floral Apron",
+    title: "Eye Lashes Tool",
     size: "one-size",
     price: "8",
     imgUrl: "/beautyImages/Eye Lashes Tool.webp",
@@ -133,28 +125,28 @@ var categories = [
 
   {
     category: "kitchen",
-    title: "Lunchbox",
+    title: "Glitter Eye Shadow",
     size: "one-size",
     price: "12",
     imgUrl: "/beautyImages/Glitter Eye Shadow.webp",
   },
   {
     category: "kitchen",
-    title: "Stainless Steel Garlic Press",
+    title: "Glitter Liquid Eyeshadow",
     size: "one-size",
     price: "4",
     imgUrl: "/beautyImages/Glitter Liquid Eyeshadow Trio.webp",
   },
   {
     category: "kitchen",
-    title: "Stainless Steel Spoon",
+    title: "Heart Sticker Nails",
     size: "one-size",
     price: "3",
     imgUrl: "/beautyImages/Heart Sticker Nails.webp",
   },
   {
     category: "kitchen",
-    title: "Gradient Water Bottle ",
+    title: "Hydrated Foundation ",
     size: "1000ml",
     price: "21",
     imgUrl: "/beautyImages/Hydrated Foundation.webp",
@@ -162,8 +154,8 @@ var categories = [
 
   //home decor
   {
-    category: "homeDecor",
-    title: "Marble Print Wallpaper",
+    category: "Kajalr",
+    title: "Kajal",
     size: "one-size",
     price: "21",
     imgUrl: "/beautyImages/Kajal.webp",
@@ -171,46 +163,25 @@ var categories = [
 
   {
     category: "homeDecor",
-    title: "Moon Shaped Tassesl Home decor",
+    title: "Lipstick",
     size: "one-size",
     price: "24",
     imgUrl: "/beautyImages/Lipstick.webp",
   },
   {
     category: "homeDecor",
-    title: "Plain Plush Home Decor",
+    title: "Nail Paint",
     size: "one-size",
     price: "18",
     imgUrl: "/beautyImages/Nail Paint.webp",
   },
   {
     category: "homeDecor",
-    title: "Slogan Printed Cushion Cover",
+    title: "Oily Skin Cleanser",
     size: "one-size",
     price: "12",
     imgUrl: "/beautyImages/Oily Skin Cleanser.webp",
   },
-  //   {
-  //     category: "homeDecor",
-  //     title: "Slogan Printed Mirror",
-  //     size: "one-size",
-  //     price: "19",
-  //     imgUrl: "/homeDecor/slogan printed mirror small.webp",
-  //   },
-  //   {
-  //     category: "homeDecor",
-  //     title: "Sun Printed Tapestry",
-  //     size: "one-size",
-  //     price: "22",
-  //     imgUrl: "/homeDecor/sun print tapestry.webp",
-  //   },
-  //   {
-  //     category: "homeDecor",
-  //     title: "Toilet Entrance Sticker ",
-  //     size: "one-size",
-  //     price: "18.00",
-  //     imgUrl: "/homeDecor/toilet entrance sticker.webp",
-  //   },
 ];
 
 localStorage.setItem("categoryProducts", JSON.stringify(categories));
@@ -323,27 +294,42 @@ slider.oninput = function () {
 
 slider.addEventListener("change", sliderFun);
 function sliderFun(e) {
-  res = catObj
-    .sort(function (a, b) {
-      return a.price - b.price;
-    })
-    .filter(function (item) {
-      return item.price <= e.target.value;
-    });
+  console.log(e.target.value);
+  var res = catObj.filter(function (item) {
+    return Number(e.target.value) >= item.price;
+  });
   showProducts(res);
 }
 
 //check box
-
-document.getElementById("checkBoxs").addEventListener("click", checkBoxFun);
-
+var boolObj = {
+  s: true,
+  xl: true,
+  m: true,
+  l: true,
+};
+for (key in boolObj) {
+  document.getElementById(key).addEventListener("click", checkBoxFun);
+}
 var checkRes = [];
 function checkBoxFun(e) {
-  var res = catObj.filter(function (item) {
-    return e.target.value == item.size;
-  });
-  checkRes.push(...res);
-  showProducts(checkRes);
+  e.target.checked;
+  if (e.target.checked) {
+    var res = catObj.filter(function (item) {
+      return e.target.value == item.size;
+    });
+    checkRes = [...checkRes, ...res];
+    showProducts(checkRes);
+  } else {
+    checkRes = checkRes.filter(function (item) {
+      return e.target.value != item.size;
+    });
+    if (checkRes.length > 0) {
+      showProducts(checkRes);
+    } else {
+      showProducts(catObj);
+    }
+  }
 }
 
 // categry filteration
