@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(0, 0, 0, 0.055);
+}
+#container{
+     display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10%;
+}
+#heading{
+    font-size: 40px;
+    text-align: center;
+    color: teal;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+.label{
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    font-style: italic;
+    margin-left: 30px;
+}
+#cvv,#edate,#cardNo,#submit{
+ border-color: white;
+ padding: 10px;
+ margin-left: 20px;
+ width: 300px;
+ border-radius: 10px;
+ margin: 10px;
+}
+.inputs:focus{
+ background-color: burlywood;
+}
+#cvv{
+ margin-left: 137px;
+}
+#edate{
+ margin-left: 40px;
+}
+#submit{
+ margin-left: 340px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ width: 100px;
+}
+#submit:hover{
+ background-color: burlywood;
+ cursor: pointer;
+}
+#cardNo{
+    margin-left: 20px;
+}
