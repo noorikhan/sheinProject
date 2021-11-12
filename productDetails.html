@@ -5,43 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #prodDetailsContainer {
-        margin: auto;
-        height: 50%;
-        width: 60%;
-
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 10%;
-      }
-
-      #img1 > img {
-        height: 430px;
-      }
-
-      .btmBorder {
-        border-bottom: 1px dotted gray;
-      }
-
-      #size {
-        border: 1px solid black;
-        text-align: center;
-        margin-bottom: 10%;
-      }
-
-      #bBtn {
-        background-color: black;
-        border: none;
-        width: 100%;
-        color: white;
-        padding: 7%;
-        margin-right: 4%;
-      }
-      #prodPgLink {
-        margin-top: 10%;
-      }
-    </style>
+    <link rel="stylesheet" href="productDetails.css" />
   </head>
   <body>
     <div id="prodDetailsContainer">
@@ -67,42 +31,4 @@
     </div>
   </body>
 </html>
-<script>
-  var productObj = JSON.parse(localStorage.getItem("seleProd"));
-  displayImgs();
-  displayDetails();
-
-  function displayImgs() {
-    var bImg = document.createElement("img");
-    bImg.setAttribute("src", productObj.imgUrl);
-    document.getElementById("img1").append(bImg);
-  }
-
-  function displayDetails() {
-    document.querySelector("h4").textContent = productObj.title;
-    document.querySelector("h1").textContent = `US$${productObj.price}`;
-    document.getElementById(
-      "size"
-    ).innerHTML = `<h3>${productObj.size[0]}</h3>`;
-  }
-
-  var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-
-  document.querySelector("button").addEventListener("click", function () {
-    var exist = false;
-    for (var j = 0; j < cartData.length; j++) {
-      if (productObj.title == cartData[j].title) {
-        exist = true;
-        break;
-      }
-    }
-    if (exist) {
-      alert("product is already added to cart");
-    } else {
-      alert("Item is added successfully");
-      cartData.push(productObj);
-
-      localStorage.setItem("cartData", JSON.stringify(cartData));
-    }
-  });
-</script>
+<script src="productDetails.js"></script>
