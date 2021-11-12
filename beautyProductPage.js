@@ -28,165 +28,166 @@ var countdown = () => {
 // countdown();
 setInterval(countdown, 1000);
 
-var categories = [
+var beautyCategories = [
   {
-    category: "bedding",
+    category: "tool",
     title: "Beauty Blender",
-    size: "s",
+    type: "other",
     price: "41",
     imgUrl: "/beautyImages/Beauty Blender.webp",
   },
   {
-    category: "bedding",
+    category: "makeup",
     title: "Compact Powder",
-    size: "m",
+    type: "powder",
     price: "28",
     imgUrl: "/beautyImages/Compact Powder.webp",
   },
   {
-    category: "bedding",
+    category: "personalCare",
     title: "Deeply Cleanser",
-    size: "m",
+    type: "liquid",
     price: "33",
     imgUrl: "/beautyImages/Deeply Cleaner.webp",
   },
   {
-    category: "bedding",
+    category: "makeup",
     title: "Liquid Matte Lipstick",
-    size: "s",
+    type: "liquid",
     price: "40",
     imgUrl: "/beautyImages/Liquid Matte Lipstick .webp",
   },
   {
-    category: "bedding",
+    category: "personalCare",
     title: "Gently Cleanser",
-    size: "s",
+    type: "liquid",
     price: "32.99",
     imgUrl: "/beautyImages/Gently Cleaner.webp",
   },
   {
-    category: "bedding",
+    category: "tool",
     title: "Makeup Brush",
-    size: "s",
+    type: "brush",
     price: "42.23",
     imgUrl: "/beautyImages/Makeup brush.webp",
   },
   {
-    category: "bedding",
+    category: "personalCare",
     title: "Effective Cleanser",
-    size: "l",
+    type: "liquid",
     price: "72",
     imgUrl: "/beautyImages/Effective Cleaner.webp",
   },
   {
-    category: "bedding",
+    category: "personalCare",
     title: "Bamboo Face Mask",
-    size: "xl",
+    type: "other",
     price: "19",
     imgUrl: "/beautyImages/Bamboo Face Mask.webp",
   },
   //this is dining and dinner category//
   {
-    category: "kitchen",
+    category: "tool",
     title: "Set Of Beauty Brush",
-    size: "one-size",
+    type: "brush",
     price: "4",
     imgUrl: "/beautyImages/Beauty .webp",
   },
   {
-    category: "kitchen",
+    category: "makeup",
     title: "Cheek Blush",
-    size: "one-size",
+    type: "powder",
     price: "5",
     imgUrl: "/beautyImages/Cheek Blush.webp",
   },
 
   {
-    category: "kitchen",
+    category: "personalCare",
     title: "Combo Skin Cleanser",
-    size: "one-size",
+    type: "liquid",
     price: "8",
     imgUrl: "/beautyImages/Combo Skin Cleanser.webp",
   },
   {
-    category: "kitchen",
+    category: "personalCare",
     title: "Dry Skin Cleanser",
-    size: "one-size",
+    type: "liquid",
     price: "12",
     imgUrl: "/beautyImages/Dry Skin Cleanser.webp",
   },
   {
-    category: "kitchen",
+    category: "tool",
     title: "Eye Lashes Tool",
-    size: "one-size",
+    type: "eye",
     price: "8",
     imgUrl: "/beautyImages/Eye Lashes Tool.webp",
   },
 
   {
-    category: "kitchen",
+    category: "makeup",
     title: "Glitter Eye Shadow",
-    size: "one-size",
+    size: "eye",
     price: "12",
     imgUrl: "/beautyImages/Glitter Eye Shadow.webp",
   },
+  // {
+  //   category: "makeup",
+  //   title: "Glitter Liquid Eyeshadow",
+  //   type: "liquid",
+  //   type: "eye",
+  //   price: "4",
+  //   imgUrl: "/beautyImages/Glitter Liquid Eyeshadow Trio.webp",
+  // },
   {
-    category: "kitchen",
-    title: "Glitter Liquid Eyeshadow",
-    size: "one-size",
-    price: "4",
-    imgUrl: "/beautyImages/Glitter Liquid Eyeshadow Trio.webp",
-  },
-  {
-    category: "kitchen",
+    category: "makeup",
     title: "Heart Sticker Nails",
-    size: "one-size",
+    type: "other",
     price: "3",
     imgUrl: "/beautyImages/Heart Sticker Nails.webp",
   },
   {
-    category: "kitchen",
+    category: "makeup",
     title: "Hydrated Foundation ",
-    size: "1000ml",
+    type: "liquid",
     price: "21",
     imgUrl: "/beautyImages/Hydrated Foundation.webp",
   },
 
   //home decor
   {
-    category: "Kajalr",
+    category: "makeup",
     title: "Kajal",
-    size: "one-size",
+    type: "eye",
     price: "21",
     imgUrl: "/beautyImages/Kajal.webp",
   },
 
+  // {
+  //   category: "makeup",
+  //   title: "Lipstick",
+  //   size: "one-size",
+  //   price: "24",
+  //   imgUrl: "/beautyImages/Lipstick.webp",
+  // },
   {
-    category: "homeDecor",
-    title: "Lipstick",
-    size: "one-size",
-    price: "24",
-    imgUrl: "/beautyImages/Lipstick.webp",
-  },
-  {
-    category: "homeDecor",
+    category: "makeup",
     title: "Nail Paint",
-    size: "one-size",
+    type: "liquid",
     price: "18",
     imgUrl: "/beautyImages/Nail Paint.webp",
   },
   {
-    category: "homeDecor",
+    category: "personalCare",
     title: "Oily Skin Cleanser",
-    size: "one-size",
+    type: "liquid",
     price: "12",
     imgUrl: "/beautyImages/Oily Skin Cleanser.webp",
   },
 ];
 
-localStorage.setItem("categoryProducts", JSON.stringify(categories));
+localStorage.setItem("beautyProducts", JSON.stringify(beautyCategories));
 
-var catObj = JSON.parse(localStorage.getItem("categoryProducts")) || [];
+var catObj = JSON.parse(localStorage.getItem("beautyProducts")) || [];
 var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 var favProductsData = JSON.parse(localStorage.getItem("favProductsData")) || [];
 
@@ -303,10 +304,10 @@ function sliderFun(e) {
 
 //check box
 var boolObj = {
-  s: true,
-  xl: true,
-  m: true,
-  l: true,
+  powder: true,
+  liquid: true,
+  eye: true,
+  other: true,
 };
 for (key in boolObj) {
   document.getElementById(key).addEventListener("click", checkBoxFun);
@@ -316,13 +317,13 @@ function checkBoxFun(e) {
   e.target.checked;
   if (e.target.checked) {
     var res = catObj.filter(function (item) {
-      return e.target.value == item.size;
+      return e.target.value == item.type;
     });
     checkRes = [...checkRes, ...res];
     showProducts(checkRes);
   } else {
     checkRes = checkRes.filter(function (item) {
-      return e.target.value != item.size;
+      return e.target.value != item.type;
     });
     if (checkRes.length > 0) {
       showProducts(checkRes);
@@ -356,9 +357,9 @@ function priceFun(e) {
 
 //clickable category btn
 
-document.getElementById("bedding").addEventListener("click", btnCatFun);
-document.getElementById("kitchen").addEventListener("click", btnCatFun);
-document.getElementById("homeDecor").addEventListener("click", btnCatFun);
+document.getElementById("tool").addEventListener("click", btnCatFun);
+document.getElementById("makeup").addEventListener("click", btnCatFun);
+document.getElementById("personalCare").addEventListener("click", btnCatFun);
 
 function btnCatFun(e) {
   var res = catObj.filter(function (item) {
