@@ -5,25 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/0ae10de0e5.js"
-      crossorigin="anonymous"
-    ></script>
     <style>
       #prodDetailsContainer {
-        width: 80%;
+        margin: auto;
+        height: 50%;
+        width: 60%;
+
         display: flex;
         justify-content: space-evenly;
+        margin-top: 10%;
       }
 
-      /* #prodImages {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-      } */
-
-      img {
-        width: 100%;
+      #img1 > img {
+        height: 430px;
       }
 
       .btmBorder {
@@ -32,83 +26,42 @@
 
       #size {
         border: 1px solid black;
-        width: 60%;
         text-align: center;
-      }
-      #qty {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-      }
-      #qty > h2 {
-        margin: 0px;
-      }
-
-      #bag {
-        margin-top: 10%;
+        margin-bottom: 10%;
       }
 
       #bBtn {
         background-color: black;
         border: none;
-        width: 60%;
+        width: 100%;
         color: white;
-        padding: 5%;
+        padding: 7%;
         margin-right: 4%;
       }
-
-      #images {
-        width: 50%;
-        display: grid;
-        grid-template-areas:
-          "s1  b b b b"
-          "s2  b b b b"
-          ".  b b b b"
-          ".  b b b b";
-        grid-gap: 15px;
+      #prodPgLink {
+        margin-top: 10%;
       }
-      #img1 {
-        grid-area: b;
-      }
-
-      #img2 {
-        grid-area: s1;
-      }
-
-      #img3 {
-        grid-area: s2;
-      }
-
     </style>
   </head>
   <body>
     <div id="prodDetailsContainer">
-      <!-- <div id="images"> -->
-        <div id="img1" class="box"></div>
-        <div id="img2" class="box"></div>
-      <!-- </div> -->
-      <!-- <div id="displayImge"> -->
-        <div id="img3" class="box"></div>
-      <!-- </div> -->
+      <div id="img1" class="box"></div>
 
       <div id="details">
         <div class="btmBorder">
-          <h5></h5>
+          <h4></h4>
           <h1></h1>
         </div>
         <h3>Size</h3>
         <div id="size"></div>
         <div id="qtyDiv">
-          <h3>Qty:</h3>
-          <div id="qty">
-            <i class="fas fa-minus" id="minus"></i>
-            <h2 id="count">1</h2>
-            <i class="fas fa-plus" id="plus"></i>
-          </div>
+          <h3>Qty: 1</h3>
         </div>
         <div id="bag">
           <button id="bBtn">ADD TO BAG</button>
-          <i class="far fa-heart"></i>
+          <div id="prodPgLink">
+            <a href="category.html">See Other Products</a>
+          </div>
         </div>
       </div>
     </div>
@@ -123,35 +76,33 @@
     var bImg = document.createElement("img");
     bImg.setAttribute("src", productObj.imgUrl[0]);
     document.getElementById("img1").append(bImg);
-
-    var sImg1 = document.createElement("img");
-    sImg1.setAttribute("src", productObj.imgUrl[1]);
-    document.getElementById("img2").append(sImg1);
-
-    var sImg2 = document.createElement("img");
-    sImg2.setAttribute("src", productObj.imgUrl[1]);
-    document.getElementById("img3").append(sImg2);
   }
 
   function displayDetails() {
-    document.getElementById("count").textContent = 1;
-
-    document.querySelector("h5").textContent = productObj.title;
+    document.querySelector("h4").textContent = productObj.title;
     document.querySelector("h1").textContent = `US$${productObj.price}`;
     document.getElementById(
       "size"
     ).innerHTML = `<h3>${productObj.size[0]}</h3>`;
-
-    document.getElementById("minus").addEventListener("click", function (e) {
-      count--;
-      document.getElementById("count").textContent = count;
-      localStorage.setItem("counter", JSON.stringify(count));
-    });
-
-    document.getElementById("plus").addEventListener("click", function () {
-      count++;
-      document.getElementById("count").textContent = count;
-      localStorage.setItem("counter", JSON.stringify(count));
-    });
   }
+
+  var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+  document.querySelector("button").addEventListener("click", function () {
+    var exist = false;
+    for (var j = 0; j < cartData.length; j++) {
+      if (productObj.title == cartData[j].title) {
+        exist = true;
+        break;
+      }
+    }
+    if (exist) {
+      alert("product is already added to cart");
+    } else {
+      alert("Item is added successfully");
+      cartData.push(productObj);
+
+      localStorage.setItem("cartData", JSON.stringify(cartData));
+    }
+  });
 </script>
