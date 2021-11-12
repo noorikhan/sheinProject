@@ -85,7 +85,7 @@ var beautyCategories = [
     price: "19",
     imgUrl: "/beautyImages/Bamboo Face Mask.webp",
   },
-  //this is dining and dinner category//
+
   {
     category: "tool",
     title: "Set Of Beauty Brush",
@@ -153,7 +153,6 @@ var beautyCategories = [
     imgUrl: "/beautyImages/Hydrated Foundation.webp",
   },
 
-  //home decor
   {
     category: "makeup",
     title: "Kajal",
