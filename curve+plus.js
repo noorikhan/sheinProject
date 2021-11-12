@@ -210,3 +210,8 @@ document.getElementById("men").addEventListener("click", function () {
 document.getElementById("curve+plus").addEventListener("click", function () {
 	window.location.href = "curve+plus.html";
 });
+
+// beauty tab
+document.getElementById("beauty").addEventListener("click", function () {
+	window.location.href = "beauty.html";
+});

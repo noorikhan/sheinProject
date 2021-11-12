@@ -1,0 +1,468 @@
+/* header part */
+section {
+	width: 100%;
+	/* border: 1px solid blue; */
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+	/* padding: 0px; */
+	height: 60px;
+}
+#offer {
+	color: white;
+	margin-left: 200px;
+	width: 80%;
+	/* border: 1px soild red; */
+	padding: 0px;
+	margin-top: 0px;
+}
+#countdown {
+	padding-top: 15px;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	float: right;
+	padding-right: 150px;
+	width: 20%;
+	/* padding: 0px; */
+}
+#countText {
+	font-size: 23px;
+}
+.day,
+.hour,
+.minute,
+.second {
+	font-size: 23px;
+	text-align: center;
+}
+.timerText {
+	color: red;
+	font-weight: bold;
+}
+span1 {
+	color: white;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#headingTwo {
+	display: flex;
+	background-color: #f7f8fa;
+}
+#lists {
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	width: 620px;
+	font-size: 20px;
+	gap: 20px;
+	padding-top: 15px;
+	color: #7f8080;
+}
+#logo {
+	width: 13%;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 42px;
+	margin-left: 20px;
+	color: #222222;
+	letter-spacing: 7px;
+}
+#headerIcons {
+	display: flex;
+	width: 700px;
+	justify-content: right;
+}
+.icons {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	margin-top: 3px;
+	padding: 10px;
+	margin-left: 10px;
+}
+img {
+	width: 100%;
+}
+.cart {
+	display: flex;
+	gap: 5px;
+}
+.prodCount {
+	font-size: 20px;
+}
+.colorChange:hover {
+	color: black;
+}
+.iconColor:hover {
+	background-color: white;
+}
+#signInUpMenu {
+	display: none;
+}
+#user:hover > #signInUpMenu {
+	display: block;
+	position: absolute;
+	padding: 1%;
+	background-color: white;
+}
+#user > #signInUpMenu > li {
+	list-style-type: none;
+	margin-bottom: 12px;
+}
+#user > #signInUpMenu > li > a {
+	text-decoration: none;
+	color: #7f8080;
+}
+
+/* middle part */
+.BeautyContainer {
+	width: 95%;
+	margin: auto;
+}
+.ad {
+	width: 96%;
+	height: 650px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+#adImg {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.myslides {
+	display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.catagory {
+	/* border:1px solid red; */
+	width: 95%;
+	height: 350px;
+	margin: auto;
+}
+.catagory h2 {
+	text-align: center;
+}
+.catagorybox {
+	/* border:1px solid blue; */
+	width: 96%;
+	height: 55px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	background-color: black;
+	overflow: hidden;
+}
+.catagorybox > div {
+	border-right: 1px solid #bbbbbb;
+	width: 33%;
+	height: 100%;
+	text-align: center;
+	color: white;
+}
+.product {
+	/* border:1px solid rgb(153, 81, 81); */
+	width: 96%;
+	height: 200px;
+	display: flex;
+	margin: auto;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+.product > div {
+	/* border:1px solid red; */
+	width: 33%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	display: grid;
+}
+.makeup {
+	grid-template-columns: repeat(2, 45%);
+	grid-template-rows: auto repeat;
+	/* grid-gap:10px; */
+	justify-content: space-evenly;
+}
+.makeup > a > div {
+	border: 1px solid #bbbbbb;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 17px;
+}
+.beauty {
+	grid-template-columns: repeat(2, 45%);
+	grid-template-rows: auto repeat;
+	/* grid-gap:12px; */
+	justify-content: space-evenly;
+}
+.beauty > a > div {
+	border: 1px solid #bbbbbb;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 17px;
+}
+.personal {
+	grid-template-columns: repeat(2, 45%);
+	grid-template-rows: auto repeat;
+	/* grid-gap:8px; */
+	justify-content: space-evenly;
+}
+.personal > a > div {
+	border: 1px solid #bbbbbb;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 17px;
+}
+a {
+	text-decoration: none;
+	color: #222;
+}
+.beautySale {
+	width: 95%;
+	margin: auto;
+	height: 400px;
+	cursor: pointer;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.beautyImg {
+	width: 100%;
+	height: 100%;
+	/* overflow:hidden; */
+	margin: auto;
+}
+.sheglam {
+	width: 95%;
+	margin: auto;
+	height: 350px;
+	cursor: pointer;
+	margin-top: 70px;
+	overflow: hidden;
+}
+.sheglamImg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+h1 {
+	text-align: center;
+}
+.new {
+	margin: auto;
+	width: 95%;
+	height: 350px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.newImg {
+	width: 100%;
+	height: 100%;
+}
+.trend {
+	margin: auto;
+	width: 95%;
+	height: 350px;
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.trendImg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.brands {
+	margin: auto;
+	width: 95%;
+	height: 150px;
+	margin-top: 60px;
+}
+.brandImg {
+	height: 100%;
+	width: 100%;
+}
+.makeup > a > div:hover {
+	background-color: #802a4e1c;
+}
+.beauty > a > div:hover {
+	background-color: #802a4e1c;
+}
+.personal > a > div:hover {
+	background-color: #802a4e1c;
+}
+
+/* footer part */
+.container {
+	/* border: 1px solid red; */
+	/* max-width: 1250px; */
+	height: 400px;
+	margin: auto;
+	background-color: #fafafa;
+	padding: 20px;
+	margin-top: 100px;
+}
+.firsthalf {
+	/* border: 1px solid green; */
+	width: 100%;
+	height: 50%;
+	display: flex;
+	padding-left: 100px;
+}
+.col-1 {
+	/* border: 1px solid blue; */
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+.line-1 {
+	float: left;
+	width: 25%;
+	min-height: 1px;
+	margin-left: 10px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: black;
+	font-size: 17px;
+}
+
+.col-2 {
+	display: flex;
+	flex-direction: column;
+}
+.findUs {
+	width: 100%;
+}
+.findUs > ul > li {
+	float: left;
+}
+.last-inline > li {
+	float: left !important;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	line-height: 32px;
+	display: list-item;
+}
+
+.image {
+	border-style: none;
+
+	padding-left: 10px;
+}
+#app {
+	width: 40%;
+	/* border: 1px solid red; */
+	display: inline-block;
+}
+#row-1 {
+	width: 100%;
+	/* border: 1px solid red; */
+	display: inline-block;
+	align-items: left;
+	margin-left: -50px;
+}
+.icons > li {
+	float: left;
+}
+
+button {
+	height: 40px;
+	width: 100px;
+	background-color: black;
+	color: white;
+	font-size: 17px;
+}
+#subscribe {
+	width: 400px;
+	height: 35px;
+}
+.rowsecond {
+	/* border: 1px solid green; */
+	width: 100%;
+	height: 50%;
+	display: flex;
+	padding-left: 100px;
+	margin-top: 30px;
+}
+.policy {
+	/* border: 1px solid red; */
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 70px;
+}
+.first > ul > li {
+	float: left;
+	margin-right: 10px;
+	text-decoration: underline;
+	border-right: 1px solid gray;
+	padding-right: 10px;
+	line-height: 25px;
+}
+.policy > span {
+	margin-left: 40px;
+}
+.payment {
+	/* border: 1px solid blue; */
+	width: 50%;
+	height: 100%;
+}
+.paymentImg {
+	width: 20px;
+	height: 20px;
+}
+#payment-option > li {
+	float: left;
+	padding-right: 10px;
+}

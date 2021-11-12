@@ -28,19 +28,13 @@ var countdown = () => {
 // countdown();
 setInterval(countdown, 1000);
 
-// shop-by-category
-var campaigns = [
-	{
-		img:
-			"https://img.ltwebstatic.com/images3_ach/2021/10/31/16356721566e4e0307cbdc98ba0cef7431a480075f.jpg",
-	},
-];
-
+// slider
 var myIndex = 0;
-carousel();
-function carousel() {
+showslides();
+
+function showslides() {
 	var i;
-	var x = document.getElementsByClassName("mySlides");
+	var x = document.getElementsByClassName("myslides");
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 	}
@@ -49,13 +43,7 @@ function carousel() {
 		myIndex = 1;
 	}
 	x[myIndex - 1].style.display = "block";
-	setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-
-// user tab
-document.getElementById("user").addEventListener("click", signInAndSignup);
-function signInAndSignup() {
-	window.location.href = "signInAndSignup.html";
+	setTimeout(showslides, 3000); // Change image every 2 seconds
 }
 
 // home tab

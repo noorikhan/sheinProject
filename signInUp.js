@@ -32,6 +32,11 @@ document.getElementById("curve+plus").addEventListener("click", function () {
 	window.location.href = "curve+plus.html";
 });
 
+// beauty tab
+document.getElementById("beauty").addEventListener("click", function () {
+	window.location.href = "beauty.html";
+});
+
 var userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 function signUp(event) {
