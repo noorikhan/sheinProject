@@ -316,27 +316,42 @@ slider.oninput = function () {
 
 slider.addEventListener("change", sliderFun);
 function sliderFun(e) {
-  res = catObj
-    .sort(function (a, b) {
-      return a.price - b.price;
-    })
-    .filter(function (item) {
-      return item.price <= e.target.value;
-    });
+  console.log(e.target.value);
+  var res = catObj.filter(function (item) {
+    return Number(e.target.value) >= item.price;
+  });
   showProducts(res);
 }
 
 //check box
-
-document.getElementById("checkBoxs").addEventListener("click", checkBoxFun);
-
+var boolObj = {
+  s: true,
+  xl: true,
+  m: true,
+  l: true,
+};
+for (key in boolObj) {
+  document.getElementById(key).addEventListener("click", checkBoxFun);
+}
 var checkRes = [];
 function checkBoxFun(e) {
-  var res = catObj.filter(function (item) {
-    return e.target.value == item.size;
-  });
-  checkRes.push(...res);
-  showProducts(checkRes);
+  e.target.checked;
+  if (e.target.checked) {
+    var res = catObj.filter(function (item) {
+      return e.target.value == item.size;
+    });
+    checkRes = [...checkRes, ...res];
+    showProducts(checkRes);
+  } else {
+    checkRes = checkRes.filter(function (item) {
+      return e.target.value != item.size;
+    });
+    if (checkRes.length > 0) {
+      showProducts(checkRes);
+    } else {
+      showProducts(catObj);
+    }
+  }
 }
 
 // categry filteration
