@@ -38,9 +38,6 @@ a:active > .buttonItem {
   color: white;
 }
 
-/* span {
-  color: #e9e9e9;
-} */
 .homeIcon:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -81,16 +78,19 @@ a:active > .buttonItem {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
-p,
-h4,
-h3 {
+#heartIcon > h4 {
+  margin: 0px;
+}
+
+#catList > h3,
+p {
   margin: 5px 0px 5px;
 }
 
 #catList > h4 {
   margin: 25px 0px 5px;
 }
-img {
+.imageDive > img {
   width: 100%;
 }
 
