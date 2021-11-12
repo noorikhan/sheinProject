@@ -1,4 +1,4 @@
-var productObj = JSON.parse(localStorage.getItem("seleProd"));
+var productObj = JSON.parse(localStorage.getItem("seleBeautyProd"));
 displayImgs();
 displayDetails();
 
@@ -11,7 +11,7 @@ function displayImgs() {
 function displayDetails() {
   document.querySelector("h4").textContent = productObj.title;
   document.querySelector("h1").textContent = `US$${productObj.price}`;
-  document.getElementById("size").innerHTML = `<h3>${productObj.size}</h3>`;
+  document.getElementById("type").innerHTML = `<h3>${productObj.type}</h3>`;
 }
 
 var cartData = JSON.parse(localStorage.getItem("cartData")) || [];

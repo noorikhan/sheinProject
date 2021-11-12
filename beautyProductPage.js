@@ -280,8 +280,8 @@ function showProducts(catObj) {
 
 function productDetails(item) {
   console.log(item);
-  localStorage.setItem("seleProd", JSON.stringify(item));
-  window.location.href = "productDetails.html";
+  localStorage.setItem("seleBeautyProd", JSON.stringify(item));
+  window.location.href = "productBeautyDetails.html";
 }
 
 var slider = document.getElementById("myRange");
