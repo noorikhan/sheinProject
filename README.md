@@ -1,6 +1,9 @@
 # SHEIN Clone
 This is a clone of SHEIN which is a global fashion and lifestyle e-tailer committed to making the beauty of fashion accessible to everyone.
 
+# Tech Stacks
+For the frontend, we have used HTML, CSS and JavaScript. And Localstorage is used on backend.
+
 
 <!-- 1 - starting page is home.html
 2 - right promocode is "HOT1111"
