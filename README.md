@@ -4,6 +4,15 @@ This is a clone of SHEIN which is a global fashion and lifestyle e-tailer commit
 # Tech Stacks
 For the frontend, we have used HTML, CSS and JavaScript. And Localstorage is used on backend.
 
+# Screen Shots
+
+<p>Home Page</p>
+<img src="https://github.com/noorikhan/sheinProject/blob/main/screenShots/homePage.png?raw=true">
+
+<p>Product Page</p>
+<img src="https://github.com/noorikhan/sheinProject/blob/main/screenShots/productPage1.png?raw=true">
+<img src="https://github.com/noorikhan/sheinProject/blob/main/screenShots/productPage2.png?raw=true">
+
 
 <!-- 1 - starting page is home.html
 2 - right promocode is "HOT1111"
