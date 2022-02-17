@@ -9,7 +9,7 @@ function signInAndSignup() {
 
 // home tab
 document.getElementById("home").addEventListener("click", function () {
-	window.location.href = "home.html";
+	window.location.href = "index.html";
 });
 
 // kids tab
@@ -19,7 +19,7 @@ document.getElementById("kids").addEventListener("click", function () {
 
 // logo
 document.getElementById("logo").addEventListener("click", function () {
-	window.location.href = "home.html";
+	window.location.href = "index.html";
 });
 
 // men tab
@@ -113,7 +113,7 @@ function checkUserDetails(email, pass, country) {
 			pass == userData[i].password &&
 			country == userData[i].country
 		) {
-			window.location.href = "home.html";
+			window.location.href = "index.html";
 			break;
 		} else if (
 			email == userData[i].emailAddress &&

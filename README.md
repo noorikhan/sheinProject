@@ -14,7 +14,7 @@ For the frontend, we have used HTML, CSS and JavaScript. And Localstorage is use
 <img src="https://github.com/noorikhan/sheinProject/blob/main/screenShots/productPage2.png?raw=true">
 
 
-<!-- 1 - starting page is home.html
+<!-- 1 - starting page is index.html
 2 - right promocode is "HOT1111"
 3 - to see products, click on home and beauty tabs' "black friday" image
 4 - functionalities are - sign in and sign up, filter, cart, favourites, checkout, payment, cart items count and favourites items count. -->

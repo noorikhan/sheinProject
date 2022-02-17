@@ -140,7 +140,7 @@ function signInAndSignup() {
 
 // home tab
 document.getElementById("home").addEventListener("click", function () {
-	window.location.href = "home.html";
+	window.location.href = "index.html";
 });
 
 // kids tab
@@ -150,7 +150,7 @@ document.getElementById("kids").addEventListener("click", function () {
 
 // logo
 document.getElementById("logo").addEventListener("click", function () {
-	window.location.href = "home.html";
+	window.location.href = "index.html";
 });
 
 // men tab
