@@ -1,6 +1,6 @@
 // countdown
 var countdown = () => {
-	var countDate = new Date("November 18, 2021 00:00:00").getTime();
+	var countDate = new Date("April 30, 2022 00:00:00").getTime();
 	var now = new Date().getTime();
 	var gap = countDate - now;
 	// console.log(countDate);
